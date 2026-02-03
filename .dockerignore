@@ -1,0 +1,37 @@
+# Docker ignore file
+# Excluir archivos innecesarios del contexto de build
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# Documentación
+README.md
+LICENSE
+*.md
+
+# Directorios antiguos
+_OLD_
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backups (se montan como volumen)
+Varios/Copias DB´s/*.sql

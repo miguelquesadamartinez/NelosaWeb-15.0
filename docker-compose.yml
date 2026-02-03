@@ -1,0 +1,66 @@
+version: "3.8"
+
+services:
+  # MySQL 5.7 (compatible con PHP 4/5 legacy code)
+  mysql:
+    image: mysql:5.7
+    container_name: nelosa_mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: nelosa_nelosa
+      MYSQL_USER: nelosa_nelosa
+      MYSQL_PASSWORD: mqm1804
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./docker/mysql-init:/docker-entrypoint-initdb.d:ro
+      - ./Varios/Copias DB´s:/backups:ro
+    networks:
+      - nelosa_network
+    command: --default-authentication-plugin=mysql_native_password --sql_mode=""
+
+  # PHP 5.6 with Apache (última versión que soporta mysql_* functions)
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nelosa_web
+    restart: always
+    ports:
+      - "8088:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - mysql
+    networks:
+      - nelosa_network
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+
+  # phpMyAdmin para gestión de base de datos
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: nelosa_phpmyadmin
+    restart: always
+    ports:
+      - "8089:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: nelosa_nelosa
+      PMA_PASSWORD: mqm1804
+      MYSQL_ROOT_PASSWORD: rootpassword
+    depends_on:
+      - mysql
+    networks:
+      - nelosa_network
+
+volumes:
+  mysql_data:
+    driver: local
+
+networks:
+  nelosa_network:
+    driver: bridge
