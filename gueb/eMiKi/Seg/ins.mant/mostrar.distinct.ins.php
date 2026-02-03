@@ -1,4 +1,4 @@
-<HTML>
+ï»¿<HTML>
 <HEAD>
 <TITLE>Ins Mant</TITLE>
 <style TYPE="text/css">
@@ -52,7 +52,7 @@ $link = conectarse_param("nelosa_nelosa_printers") ;
 
 $last = $arry_cnt ;
 for ( $j = 1; $j < $last ; $j++ ) // Por cada tabla, menos Ins_Brand
-{		// Devuelve la marca desde los nombres de las db´s
+{		// Devuelve la marca desde los nombres de las dbï¿½s
 		$string1 = $rest [$j];
 		$needle = "_";
 		$needle_len = strlen($needle);//find length of the needle
@@ -68,7 +68,7 @@ for ( $j = 1; $j < $last ; $j++ ) // Por cada tabla, menos Ins_Brand
 	// Encabezado de tabla con nombre de la db
 	echo ('<table width="100%"  border="0"><tr><td><div align="center"><b><font size="3" face="Arial, Helvetica, sans-serif">' . $rest [$j] . '</font></b></div></td></tr></table>');
 	echo ('<table width="100%"  border="0"><tr>');
-	//Select de disticnt ins´s
+	//Select de disticnt insï¿½s
 	$result=mysql_query("Select distinct Ins From " . $rest [$j] ,$link);
 	$cnt = 0 ;
 	while ($row = mysql_fetch_row($result)) {

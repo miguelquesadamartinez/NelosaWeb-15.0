@@ -1,4 +1,4 @@
-<?php session_register('arry'); session_register('arry_cnt'); ?>
+﻿<?php session_register('arry'); session_register('arry_cnt'); ?>
 <HTML>
 <HEAD>
 <TITLE>IP control</TITLE>
@@ -33,14 +33,14 @@ A:visited {color: "#0000FF";  text-decoration: none;}
 	$arry_cnt = 0 ;
 	$dbname = 'nelosa_nelosa';
 
-	mysql_connect("localhost","nelosa_nelosa","mqm1804");	
+	mysql_connect("mysql","nelosa_nelosa","mqm1804");	
 	$result = mysql_list_tables($dbname);
 	
 	while ($row = mysql_fetch_row($result)) {
 	   if ( ( strncmp ( $row[0], "emails_", 7 ) == 0 ) && ( $row[0] != emails_2 ) )  {
 			
 			$rest = substr( $row[0] , 7, strlen ( $row[0] ) ); // Le quita emails_
-				$link2=mysql_connect("localhost","nelosa_nelosa","mqm1804");
+				$link2=mysql_connect("mysql","nelosa_nelosa","mqm1804");
 				mysql_select_db("nelosa_nelosa",$link2);
 			
 				for ($i = 0; $i <= $arry_cnt; $i++) 

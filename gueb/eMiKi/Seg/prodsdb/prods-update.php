@@ -1,4 +1,4 @@
-<?php session_register('prox');?>
+﻿<?php session_register('prox');?>
 <HTML><HEAD><TITLE>prods DB Update</TITLE>
 <META NAME="ROBOTS" content="NOFOLLOW,NOINDEX"/>
 </HEAD>

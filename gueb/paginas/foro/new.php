@@ -1,4 +1,4 @@
-<?php 	include("../../eMiKi/headers/vbles_sesion.php");
+ï»¿<?php 	include("../../eMiKi/headers/vbles_sesion.php");
 $idioma = "esp" ; 
 ?>
 <!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//ES'>
@@ -35,7 +35,7 @@ BODY{color:"#0000FF"; font-family:Arial, Helvetica, sans-serif}
 .Estilo12 {color: #FFFFFF; font-weight: bold; font-size: 12px; }
 </style>
 <?php 
-// Para el cambio de idioma en modo diseño
+// Para el cambio de idioma en modo diseï¿½o
 if (isset($cambiar)) $idioma=$cambiar  ;
  ?>
 </HEAD>

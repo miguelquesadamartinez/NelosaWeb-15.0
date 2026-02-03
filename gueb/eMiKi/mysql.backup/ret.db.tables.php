@@ -1,4 +1,4 @@
-<?php   
+﻿<?php   
 //$dbname = $_GET[$dbparam];     
 //$dbname = $_POST[$dbparam];     
 

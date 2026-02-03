@@ -1,7 +1,7 @@
-<?php 
+﻿<?php 
 include("../Funciones_PHP.php");
 echo ($db ."<BR>");
-  if (!($link=mysql_connect("localhost","nelosa","mqm1804"))) 
+  if (!($link=mysql_connect("mysql","nelosa","mqm1804"))) 
    { 
       echo "Error conectando a la base de datos."; 
       exit(); 

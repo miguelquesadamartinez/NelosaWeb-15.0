@@ -1,4 +1,4 @@
-<?php session_register('usr'); session_register('v_Pais'); session_register('tabla');
+﻿<?php session_register('usr'); session_register('v_Pais'); session_register('tabla');
 /*
 Clientes to wwwDB
 Si no existe el email que se le pasas desde vb.DbManager lo inserta

@@ -1,4 +1,4 @@
-<?php 
+ï»¿<?php 
 include ( "../../../eMiKi/headers/vbles_sesion.php" );
 ?>
 <HTML><HEAD>
@@ -268,7 +268,7 @@ Clave
 				return (false); 
 			}
 			if ( Formulario_2.hd_ape1.value=="" ) {
-				alert ("Falta 1º Apellido !!");
+				alert ("Falta 1ï¿½ Apellido !!");
 				return (false); 
 			}
 			else			{

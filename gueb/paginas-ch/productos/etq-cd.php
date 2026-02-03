@@ -1,4 +1,4 @@
-<?php 
+ï»¿<?php 
 include ( "../../eMiKi/Headers/vbles_sesion.php" );
 include ( "../../eMiKi/Funciones_PHP.php" );
 $idioma = "fra" ;
@@ -61,7 +61,7 @@ BODY{color:"#0000FF"; font-family:Arial, Helvetica, sans-serif}
           <table width="95%"  border="0">
             <tr>
               <td><p align="center"><font color="#0000FF" face="Arial, Helvetica, sans-serif" size="3"><b>
-			  <?php echo getext($idioma,"title 068"); // Etiquetas y Dorsos para CD´s?></b></font></p>
+			  <?php echo getext($idioma,"title 068"); // Etiquetas y Dorsos para CDï¿½s?></b></font></p>
                   <p align="center">
                     <?php 	
 
@@ -69,7 +69,7 @@ BODY{color:"#0000FF"; font-family:Arial, Helvetica, sans-serif}
 
 $bar = 0 ;
 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link) ;
 
 	echo ("<table width='99%' border='0'><tr>");

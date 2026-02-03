@@ -1,4 +1,4 @@
-<?php 
+ï»¿<?php 
 include ( "../../../eMiKi/headers/vbles_sesion.php" );
 include ( "../../../eMiKi/Funciones_PHP.php" );
 ?><!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//ES'>
@@ -94,7 +94,7 @@ body,td,th {
           <tr>
             <td><p align="left" class="Estilo4 Estilo2">&nbsp; </p>
               <p>Las 4 primeras recargas de un cartucho LASER, son muy f&aacute;ciles de realizar. </p>
-              <p>Para la recarga de un cartucho de impresoras l&aacute;ser, hay que buscar el orificio de relleno, (consultar en el C.D. de instrucciones o en nuestro servicio t&eacute;cnico), en algunos cartuchos este orificio, esta debajo de una tapa que debe extraer, en otros hay que hacerlo, cuyas medidas ser&iacute;an de 1 o 2 cm. sirvi&eacute;ndose de un “cutter”, calentando la punta . </p>
+              <p>Para la recarga de un cartucho de impresoras l&aacute;ser, hay que buscar el orificio de relleno, (consultar en el C.D. de instrucciones o en nuestro servicio t&eacute;cnico), en algunos cartuchos este orificio, esta debajo de una tapa que debe extraer, en otros hay que hacerlo, cuyas medidas ser&iacute;an de 1 o 2 cm. sirvi&eacute;ndose de un ï¿½cutterï¿½, calentando la punta . </p>
               <p>No deben caer restos de pl&aacute;stico en el interior del cartucho, puede salir defectuosa la impresi&oacute;n </p>
               <p>La c&aacute;mara del t&oacute;ner virgen, siempre ser&aacute; la m&aacute;s grande, </p>
               <p>Hay que abrir el orificio lejos del mecanismo y en la parte superior del cartucho. </p>

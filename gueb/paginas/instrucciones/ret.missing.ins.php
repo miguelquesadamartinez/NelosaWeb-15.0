@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 include ( "../../eMiKi/Funciones_PHP.php" );
 $link = conectarse_param("nelosa_printers") ;
 // Segun venga el parametro seleko todas las impresoras laser o inkjet de la marca

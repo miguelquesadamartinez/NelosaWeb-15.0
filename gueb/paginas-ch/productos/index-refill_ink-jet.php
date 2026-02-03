@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 include ( "../../eMiKi/Headers/vbles_sesion.php" );
 include ( "../../eMiKi/Funciones_PHP.php" );
 $idioma = "fra" ;
@@ -77,7 +77,7 @@ BODY{color:"#0000FF"; font-family:Arial, Helvetica, sans-serif}
 
 $bar = 0 ;
 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link) ;
 
 	echo ("<table width='100%' border='0'><tr>");

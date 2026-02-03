@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 session_register('str_arry'); session_register('str_arry_cnt');
 /* * * * * * * * * * * * * * * * * * * * * * */
 /* Para busqueda desde " Texto Paginas Amarillas "

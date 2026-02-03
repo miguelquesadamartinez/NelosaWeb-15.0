@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 /*
 	this class encapsulates the PHP mail() function.
 	implements CC, Bcc, Priority headers
@@ -173,7 +173,7 @@ set the mail recipient
 function To( $to )
 {
 
-	// TODO : test validité sur to
+	// TODO : test validitï¿½ sur to
 	if( is_array( $to ) )
 		$this->sendto= $to;
 	else 
@@ -226,7 +226,7 @@ function Bcc( $bcc )
  *		set the body (message) of the mail
  *		define the charset if the message contains extended characters (accents)
  *		default to us-ascii
- *		$mail->Body( "mél en français avec des accents", "iso-8859-1" );
+ *		$mail->Body( "mï¿½l en franï¿½ais avec des accents", "iso-8859-1" );
  */
 function Body( $body, $charset="" )
 {

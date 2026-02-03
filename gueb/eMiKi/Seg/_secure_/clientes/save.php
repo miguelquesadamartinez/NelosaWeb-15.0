@@ -1,4 +1,4 @@
-<?php 	
+﻿<?php 	
 include("../../../../eMiKi/Funciones_PHP.php"); 
 
 $link=conectarse(); 

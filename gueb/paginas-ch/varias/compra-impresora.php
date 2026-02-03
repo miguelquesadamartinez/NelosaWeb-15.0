@@ -1,4 +1,4 @@
-<?php 
+ï»¿<?php 
 include ( "../../eMiKi/Headers/vbles_sesion.php" );
 include ( "../../eMiKi/Funciones_PHP.php" );
 $idioma = "fra" ;
@@ -67,7 +67,7 @@ body,td,th {
             <td height="211"><div align="center">
               <p><font face="Arial, Helvetica, sans-serif"><span class="Estilo3 Estilo1"><strong><?php echo getext($idioma,"txt 005"); //Tel?></strong></span></font></p>
             </div>
-              <p align="center"><font face="Arial, Helvetica, sans-serif"><b><font color="#FF0000">Téléphone</font></b></font></p>
+              <p align="center"><font face="Arial, Helvetica, sans-serif"><b><font color="#FF0000">Tï¿½lï¿½phone</font></b></font></p>
 			  <p align="center"><font face="Arial, Helvetica, sans-serif"><b><font color="#0000FF">026 322 12 56</font> </b> </font>
 			  <p align="center"><font face="Arial, Helvetica, sans-serif"><b><font color="#FF0000">Fax</font></b></font></p>
               <p align="center"><font face="Arial, Helvetica, sans-serif"><b><font color="#0000FF"> (+41) 26 322 12 70</font> </b> </font>

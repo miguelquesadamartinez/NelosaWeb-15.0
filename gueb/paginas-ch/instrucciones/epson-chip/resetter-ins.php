@@ -1,4 +1,4 @@
-<?php 
+ï»¿<?php 
 include ( "../../../eMiKi/Headers/vbles_sesion.php" );
 include ( "../../../eMiKi/Funciones_PHP.php");
 $idioma = "fra" ;
@@ -6,7 +6,7 @@ $idioma = "fra" ;
 <!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//ES'>
 <HTML>
 <HEAD>
-<title>Instruction pour ré-initialisé les cartouche Epson</title>
+<title>Instruction pour rï¿½-initialisï¿½ les cartouche Epson</title>
 <META NAME="ROBOTS" content="FOLLOW,INDEX"/>
 <meta http-equiv="Content-Language" content="es-es"/>
 

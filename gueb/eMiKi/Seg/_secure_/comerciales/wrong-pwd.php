@@ -1,4 +1,4 @@
-<?php 	
+﻿<?php 	
 //session_start(); 
 session_register('cokie'); 
 include("../../../../eMiKi/Seg/_secure_/eMiKi/Funciones_PHP.php"); 

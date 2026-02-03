@@ -1,4 +1,4 @@
-<?php session_register('impresora');  session_register('brand');  session_register('INS'); 
+﻿<?php session_register('impresora');  session_register('brand');  session_register('INS'); 
 
 	if ($Brandy <> "" )
 	{	$impresora = $Brandy ; }

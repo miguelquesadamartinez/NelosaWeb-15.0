@@ -1,4 +1,4 @@
-<HTML>
+ï»¿<HTML>
 <HEAD>
 <TITLE>Textos recarga</TITLE>
 
@@ -142,7 +142,7 @@ while($row = mysql_fetch_array($result))
         //if ($printable=="si")
 		//{
 			echo ( "<tr><td><font color='#FF0000' size='2'><STRONG>Texto: " . $ref . "</STRONG></font></td></tr>" ) ;
-			echo ( "<tr><td>Español</td></tr>" ) ;
+			echo ( "<tr><td>Espaï¿½ol</td></tr>" ) ;
 	  //	}
 		//else
 		//{
@@ -176,7 +176,7 @@ if ($chkCat=='si')
 		
 		$texto = ereg_replace ("%B4", "'", $texto);
 			
- 		echo ( "<tr><td>Catalá</td></tr><tr><td>" ) ;
+ 		echo ( "<tr><td>Catalï¿½</td></tr><tr><td>" ) ;
   		echo ( "<form name='form1' method='post' action='mod_refill.php' target='_blank'>" ) ;
         if ($printable!="si")
 		{

@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 include ( "eMiKi/headers/vbles_sesion.php" );
 include ( "eMiKi/Funciones_PHP.php" );
 $idioma = "esp" ;
@@ -6,11 +6,11 @@ $idioma = "esp" ;
 $jost = "nelosa.net" ;
 if ($usr == "")
 {
-	$var = $_COOKIE["nelosa"];
+	$var = isset($_COOKIE["nelosa"]) ? $_COOKIE["nelosa"] : "";
 	//echo "<BR>var : " .$var." <BR>" ;
 	//echo "<BR> -- <BR>" ;
 	if ($var <> "") { $usr = $var;  $distri='' ;}
-	$var = $_COOKIE["nelosadistri"];
+	$var = isset($_COOKIE["nelosadistri"]) ? $_COOKIE["nelosadistri"] : "";
 	if ($var <> "") { $usr = $var; $distri='si' ; }
 }
 
@@ -291,7 +291,7 @@ if ($distri=="")
 			}
 			else
 			{
-				    $link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+				    $link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 					mysql_select_db("nelosa_nelosa",$link) ;
 					
 					$result=mysql_query("Select * from Clientes where email = '". $usr ."'" ,$link); 
@@ -359,7 +359,7 @@ if ($distri=="")
  <?php 
 if ($distri<>"")
 {
-				    $link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+				    $link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 					mysql_select_db("nelosa_nelosa",$link) ;
 					
 					$result=mysql_query("Select * from Clientes_Tiendas where email = '". $usr ."'" ,$link); 

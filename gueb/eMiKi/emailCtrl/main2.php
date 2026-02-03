@@ -1,4 +1,4 @@
-<HTML><HEAD><TITLE>Menu de control de emails</TITLE>
+﻿<HTML><HEAD><TITLE>Menu de control de emails</TITLE>
 <META NAME="ROBOTS" content="NOFOLLOW,NOINDEX"/>
 </HEAD>
 <BODY bgcolor="#FFFFFF" text="#0000FF" link="#0000FF" vlink="#0000FF" alink="#0000FF">
@@ -78,11 +78,11 @@ while($row = mysql_fetch_array($result))
 			}
 	}
 // Emails de las instrucciones
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa_control",$link) ;
-$link_2=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link_2=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link_2) ;
-$link_3=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link_3=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link_3) ;
 
 $result=mysql_query("Select * From zControl_Ins" ,$link); 

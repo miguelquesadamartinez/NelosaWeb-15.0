@@ -1,4 +1,4 @@
-<HTML>
+ï»¿<HTML>
 <HEAD>
 <TITLE>Textos productos</TITLE>
 
@@ -115,7 +115,7 @@ while($row = mysql_fetch_array($result))
 			
 		$texto = ereg_replace ("%B4", "'", $texto);	
 			
- 		echo ( "<tr><td><font color='#FF0000'>Ref. : " . $ref . "</font></td></tr><tr><td>Español</td></tr><tr><td>" ) ;
+ 		echo ( "<tr><td><font color='#FF0000'>Ref. : " . $ref . "</font></td></tr><tr><td>Espaï¿½ol</td></tr><tr><td>" ) ;
   		echo ( "<form name='form1' method='post' action='mod_prod.php' target='_blank'>" ) ;
 
         if ($printable2!="si")
@@ -147,7 +147,7 @@ if ($chkCat2=='si')
 		$vble = ereg_replace ("%B4", "'", $vble);	
 			
 			
- 		echo ( "<tr><td>Catalá</td></tr><tr><td>" ) ;
+ 		echo ( "<tr><td>Catalï¿½</td></tr><tr><td>" ) ;
   		echo ( "<form name='form1' method='post' action='mod_prod.php' target='_blank'>" ) ;
         if ($printable2!="si")
 		{

@@ -1,4 +1,4 @@
-<?php session_register('prox'); session_register('items'); session_register('lastpaz'); ?>
+﻿<?php session_register('prox'); session_register('items'); session_register('lastpaz'); ?>
 <HTML>
 <HEAD><TITLE>prods DB Update</TITLE>
 <META NAME="ROBOTS" content="NOFOLLOW,NOINDEX"/>

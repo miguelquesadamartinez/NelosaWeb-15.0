@@ -1,4 +1,4 @@
-<?php        
+﻿<?php        
 $link=mysql_connect ("localhost", "nelosa", "mqm1804"); 
 	
 $db_list = mysql_list_dbs($link);

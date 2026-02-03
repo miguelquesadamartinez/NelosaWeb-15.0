@@ -1,4 +1,4 @@
-<HTML><HEAD><TITLE>Traductor</TITLE>
+﻿<HTML><HEAD><TITLE>Traductor</TITLE>
 <META NAME="ROBOTS" content="NOFOLLOW,NOINDEX"/>
 </HEAD><BODY>
 <?php /* 

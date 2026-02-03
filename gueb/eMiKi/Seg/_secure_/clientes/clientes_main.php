@@ -1,4 +1,4 @@
-<?php 	
+ï»¿<?php 	
 session_register('doing'); 
 
 include("../../../eMiKi/Funciones_PHP.php"); 
@@ -65,7 +65,7 @@ $select = $tempresa ;
 <META NAME="ROBOTS" content="NOFOLLOW,INDEX"/>
 
 <?php include("../../../eMiKi/headers/Styles/Style_001.htm"); 
-// Para el cambio de idioma en modo diseño
+// Para el cambio de idioma en modo diseï¿½o
 if (isset($cambiar)) $idioma=$cambiar  ;
 ?>
 </HEAD>

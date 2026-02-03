@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 include ( "../../eMiKi/Headers/vbles_sesion.php" );
 include ( "../../eMiKi/Funciones_PHP.php" );
 $idioma = "fra" ;
@@ -32,7 +32,7 @@ body,td,th {
 //echo "Page: " . $page . " ean = ". $ean . "<BR>" ;
 //echo "Page: " . $page ;
 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link) ;
 
 //echo ("select * from prods where Code = '". $ean ."'");

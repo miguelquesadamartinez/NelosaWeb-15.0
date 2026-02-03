@@ -1,4 +1,4 @@
-<HTML><HEAD><TITLE>email search by eMiKi</TITLE>
+﻿<HTML><HEAD><TITLE>email search by eMiKi</TITLE>
 <META NAME="ROBOTS" content="NOFOLLOW,NOINDEX"/>
 </HEAD><body bgcolor="#FFFFFF">
 <table width="431" border="0" align="center">
@@ -72,7 +72,7 @@ echo ("Inicio b_e_y_l: " . $web_p . " - " . $db_p . "<BR>" );
 						</form>
 						") ;	
 
-							/*$link2=mysql_connect("localhost","nelosa_nelosa","mqm1804");
+							/*$link2=mysql_connect("mysql","nelosa_nelosa","mqm1804");
 							mysql_select_db("nelosa_nelosa",$link2);
 							mysql_query("UPDATE `" . $base . "` SET `email" . $email_cnt . "` = ' " . $mails[$i] . "' WHERE `web` = 'a'" ,$link2); */
 						 	$email_cnt = $email_cnt + 1 ;
@@ -95,7 +95,7 @@ echo ("Inicio b_e_y_l: " . $web_p . " - " . $db_p . "<BR>" );
 		}
 		fclose($file);
 }//end function
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804");
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804");
 mysql_select_db("nelosa_nelosa",$link);
 
 $result=mysql_query("Select * From " . $db ,$link); 

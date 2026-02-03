@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 include ( "../../eMiKi/Headers/vbles_sesion.php" );
 include ( "../../eMiKi/Funciones_PHP.php" );
 ?><!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//ES'>

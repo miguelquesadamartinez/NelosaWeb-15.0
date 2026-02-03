@@ -1,7 +1,7 @@
-<html><head><title>Clientes</title></head>
+﻿<html><head><title>Clientes</title></head>
 <?
 include("../../images/productos/Funciones_PHP.miki");
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link) ;
 
 ?>

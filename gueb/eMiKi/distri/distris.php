@@ -1,7 +1,7 @@
-<?
+﻿<?
 include("../Funciones_PHP.php");
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
-$link2=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
+$link2=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link) ;
 mysql_select_db("nelosa_nelosa",$link2) ;
 

@@ -1,4 +1,4 @@
-<HTML><HEAD><TITLE>email search by eMiKi</TITLE>
+﻿<HTML><HEAD><TITLE>email search by eMiKi</TITLE>
 <META NAME="ROBOTS" content="NOFOLLOW,NOINDEX"/>
 <style TYPE="text/css">
 A:link {color:"#0000FF";  text-decoration: none;}
@@ -11,7 +11,7 @@ A:visited {color: "#0000FF";  text-decoration: none;}
       <div align="center">
       </div></td></tr><tr><td height="21">
 <?php 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804");
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804");
 mysql_select_db("nelosa_nelosa",$link);
 
 

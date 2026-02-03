@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 /* * * * * * * * * * * * * * * * * * * * * * */
 /* Muestra los links que haya en la DB seleccionada
 /* Los prepara para mandar a search.php
@@ -16,7 +16,7 @@
 
 $array_cnt = 1 ;
 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804");
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804");
 mysql_select_db("nelosa_nelosa",$link);
 $result=mysql_query("Select * From web_paginas_amarillas",$link); 
 while($row = mysql_fetch_array($result)) 

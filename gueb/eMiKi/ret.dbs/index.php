@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//ES'>
+﻿<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//ES'>
 <HTML>
 <HEAD>
 <TITLE></TITLE>
@@ -6,7 +6,7 @@
 <form name="form1" method="post" action="ret.deb.php">
   <?php 
 	$dbname = 'nelosa_printers';
-	if (!mysql_connect("localhost","nelosa","mqm1804")) {	   echo 'Could not connect to mysql';	   exit;	}
+	if (!mysql_connect("mysql","nelosa","mqm1804")) {	   echo 'Could not connect to mysql';	   exit;	}
 	$result = mysql_list_tables($dbname);
 	if (!$result) {	   echo "DB Error, could not list tables\n";	   echo 'MySQL Error: ' . mysql_error();	   exit;	}
 	$arry_cnt = 0 ;
@@ -22,7 +22,7 @@
 	mysql_free_result($result);
 echo "<BR>";
 	$dbname = 'nelosa_nelosa';
-	if (!mysql_connect("localhost","nelosa","mqm1804")) {	   echo 'Could not connect to mysql';	   exit;	}
+	if (!mysql_connect("mysql","nelosa","mqm1804")) {	   echo 'Could not connect to mysql';	   exit;	}
 	$result = mysql_list_tables($dbname);
 	if (!$result) {	   echo "DB Error, could not list tables\n";	   echo 'MySQL Error: ' . mysql_error();	   exit;	}
 	$arry_cnt = 0 ;

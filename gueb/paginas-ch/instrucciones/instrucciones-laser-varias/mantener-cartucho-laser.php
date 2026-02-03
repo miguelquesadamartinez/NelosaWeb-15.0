@@ -1,4 +1,4 @@
-<?php 
+ï»¿<?php 
 include ( "../../eMiKi/Headers/vbles_sesion.php" );
 include ( "../../eMiKi/Funciones_PHP.php" );
 ?><!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//ES'>
@@ -80,7 +80,7 @@ body,td,th {
               <p>La consommation d'une cartouche se base sur une couverture d'impression de 2 &agrave; 3 % de la capacit&eacute; de la feuille, si l'on imprime des graphiques on consommera 4 X plus de toner. </p>              
               <p>&nbsp;</p>              
               <h1 align="center"><strong>OUTILS DE RECHARGE LASER </strong></h1>              
-              <p align="center">Contenu des kits de recharge 3301 – 3302 </p>              
+              <p align="center">Contenu des kits de recharge 3301 ï¿½ 3302 </p>              
               <p align="center"><img src="../aimagenes/laser/herram-laser.gif" width="656" height="169"></p>              </td>
             </tr>
         </table>

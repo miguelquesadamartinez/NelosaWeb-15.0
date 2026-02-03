@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 /* * * * * * * * * * * * * * * * * * * * * * */
 /* 
 /* 
@@ -123,7 +123,7 @@ echo ("Inicio b_e_y_l: " . $web_paramy . " - " . $db_paramy . "<BR>" );
 		 }
 
 		fclose($file);
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804");
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804");
 mysql_select_db("nelosa_nelosa",$link);
 $mail_db = "" ;
 $result=mysql_query("Select * From webs_" . $db_paramy ." where web = '" . $web_paramy . "'",$link);   

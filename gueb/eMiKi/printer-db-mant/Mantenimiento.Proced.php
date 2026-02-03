@@ -1,4 +1,4 @@
-<?php session_register('usr'); session_register('v_Pais'); session_register('impresora'); session_register('tabla'); 
+﻿<?php session_register('usr'); session_register('v_Pais'); session_register('impresora'); session_register('tabla'); 
 session_register('brand');  session_register('INS');  session_register('tmpy'); 
 ?>
 <!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//ES'>

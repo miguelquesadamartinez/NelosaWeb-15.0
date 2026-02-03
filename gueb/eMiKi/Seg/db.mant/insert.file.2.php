@@ -1,4 +1,4 @@
-<title>Modificar tablas de nelosa_nelosa_emails </title>
+ï»¿<title>Modificar tablas de nelosa_nelosa_emails </title>
   <p>Mantenimiento de bases de datos </p>
     <?php
 	
@@ -16,12 +16,12 @@ $fp = fopen($archivo,'r');
 //leemos el archivo
 $texto = fread($fp, filesize($archivo));
 
-//transformamos los saltos de línea en etiquetas <br>
+//transformamos los saltos de lï¿½nea en etiquetas <br>
 $texto = nl2br($texto);
 
 //echo $texto;
 
-//Muy interesante la funcion nl2br (new line to break) que transforma los saltos de línea de un archivo texto en etiquetas <br>
+//Muy interesante la funcion nl2br (new line to break) que transforma los saltos de lï¿½nea de un archivo texto en etiquetas <br>
 	
 	$link=mysql_connect("nelosa.net","nelosa","mqm1804") ;
 	mysql_select_db("nelosa_nelosa_emails",$link) ;

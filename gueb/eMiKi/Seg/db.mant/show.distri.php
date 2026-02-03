@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 include ( "../../../eMiKi/headers/vbles_sesion.php" );
 ?>
 <HTML>
@@ -47,7 +47,7 @@ body,td,th {
 					  
 					  <?php 	
 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link) ;
 if ( $user <> "" )  // Si le pasamos param.
 {

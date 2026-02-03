@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 // Defines
 DEFINE ("DB_SELECT_FORM", 1);
@@ -105,7 +105,7 @@ if (!$config_exist) {
 include("config.inc");
 
 // Connect to MySQL"localhost" ,"nelosa_nelosa","mqm1804"
-$link = mysql_connect("localhost" ,"nelosa","mqm1804");
+$link = mysql_connect("mysql" ,"nelosa","mqm1804");
 if (!$link) die("Failed to connect to MySQL - ".mysql_error());
 
 // Select database if one is chosen

@@ -1,4 +1,4 @@
-<HTML><HEAD><TITLE>email search by eMiKi</TITLE>
+ï»¿<HTML><HEAD><TITLE>email search by eMiKi</TITLE>
 <META NAME="ROBOTS" content="NOFOLLOW,NOINDEX"/>
 </HEAD><body bgcolor="#FFFFFF">
 <table width="626" border="0" align="center">
@@ -14,7 +14,7 @@ $links_vec_cnt = 0 ;
 $links_vec_chivi = 0 ;
 echo ("Inicio Busqueda para db - " . $db_p . "<BR><BR><BR><BR>" );		
 //echo ( "Texto: " . $texto_p . "<BR>" );		
-//echo ( "Tamaño cadena: " . strlen ($texto_p) . "<BR>" );		
+//echo ( "Tamaï¿½o cadena: " . strlen ($texto_p) . "<BR>" );		
 
 		$email_cnt = 1 ;	 
 		$file = $texto_p;
@@ -102,7 +102,7 @@ $chars = preg_split('/ /', $str, -1, PREG_SPLIT_OFFSET_CAPTURE);
 
 
 }//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804");
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804");
 mysql_select_db("nelosa_nelosa",$link);
 
 		//echo (  "Texto: " . $texto . "<BR>") ;

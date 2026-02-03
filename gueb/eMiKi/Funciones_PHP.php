@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 function getext($idioma_p,$texte) {
 
 	$link_P=conectarse_param("nelosa_nelosa_textos") ; 
@@ -39,7 +39,7 @@ return $texto ;
 }// - - - - - - - - - - - - - - - - 
 function conectarse() 
 { 
-   if (!($linkc=mysql_connect( "localhost" ,"nelosa_nelosa","mqm1804")))    { 
+   if (!($linkc=mysql_connect( "mysql" ,"nelosa_nelosa","mqm1804")))    { 
       echo "Error conectando a la base de datos."; 
       exit(); 
    } 
@@ -54,7 +54,7 @@ function conectarse_param($param)
    $jost = "localhost";
    //$jost = "nelosa.net";
    
-   if (!($linkparam=mysql_connect( "localhost" ,"nelosa_nelosa","mqm1804"))) 
+   if (!($linkparam=mysql_connect( "mysql" ,"nelosa_nelosa","mqm1804"))) 
    {
       echo "Error conectando a la base de datos."; 
       exit(); 
@@ -68,7 +68,7 @@ function conectarse_param($param)
 }
 function conectarse_jost_param($jost,$param) 
 { 
-   if (!($linkfun=mysql_connect( "localhost" ,"nelosa_nelosa","mqm1804"))) 
+   if (!($linkfun=mysql_connect( "mysql" ,"nelosa_nelosa","mqm1804"))) 
    {
       echo "Error conectando a la base de datos."; 
       exit(); 

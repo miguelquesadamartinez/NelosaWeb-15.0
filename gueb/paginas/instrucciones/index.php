@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 if ( $jost == "" ) $jost = "nelosa.net" ;
 include ( "../../eMiKi/headers/vbles_sesion.php" );
 ?>

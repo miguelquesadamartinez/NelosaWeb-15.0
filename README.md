@@ -355,24 +355,12 @@ docker exec -i nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "V
 - [Estructura de Base de Datos](docker/mysql-init/README.md) - Detalles de las tablas
 - [Funciones PHP Core](gueb/eMiKi/Funciones_PHP.php) - Funciones principales
 
-## 🤝 Contribuciones
-
-Este es un proyecto legacy/histórico. Las contribuciones son bienvenidas especialmente para:
-
-- ✅ Documentación mejorada
-- ✅ Migración a mysqli/PDO
-- ✅ Actualización a PHP 7.x/8.x
-- ✅ Tests automatizados
-- ✅ Corrección de vulnerabilidades de seguridad
-- ✅ Modernización del frontend
-
 ## 📝 Notas del Desarrollador
 
 ### Autor Original
 
 **Miguel Quesada Martínez**
 
-- 📧 Email: [info@nelosa.net](mailto:info@nelosa.net)
 - 🌐 Web original: www.nelosa.net
 
 ### Contexto Histórico
@@ -400,7 +388,7 @@ Copyright (c) 2026 Miguel Quesada Martínez
 
 - **Web local**: http://localhost:8080/gueb/
 - **phpMyAdmin**: http://localhost:8081
-- **Repositorio**: https://github.com/tu-usuario/NelosaWeb-15.0
+- **Repositorio**: https://github.com/miguelquesadamartinez/NelosaWeb-15.0
 
 ---
 

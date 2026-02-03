@@ -1,4 +1,4 @@
-<?php session_register('impresora');   session_register('brand');  session_register('INS'); 
+﻿<?php session_register('impresora');   session_register('brand');  session_register('INS'); 
 if ( $VBimpresora <> "" ) $impresora = $VBimpresora ;
  ?>
 <!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//ES'>

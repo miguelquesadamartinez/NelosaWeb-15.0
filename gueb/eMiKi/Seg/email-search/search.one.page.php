@@ -1,4 +1,4 @@
-<HTML><HEAD><TITLE>email search by eMiKi</TITLE>
+﻿<HTML><HEAD><TITLE>email search by eMiKi</TITLE>
 <META NAME="ROBOTS" content="NOFOLLOW,NOINDEX"/>
 </HEAD><body bgcolor="#FFFFFF">
 <table width="431" border="0" align="center">
@@ -8,7 +8,7 @@
 
 include ("../../funcion_email.php") ;
 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804");
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804");
 mysql_select_db("nelosa_nelosa",$link);
 
 $level_counter = 0 ;

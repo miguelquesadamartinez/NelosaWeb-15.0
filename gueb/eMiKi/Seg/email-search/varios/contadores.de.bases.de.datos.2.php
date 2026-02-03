@@ -1,4 +1,4 @@
-<?php session_register('arry'); session_register('arry_cnt'); ?>
+﻿<?php session_register('arry'); session_register('arry_cnt'); ?>
 <HTML>
 <HEAD>
 <TITLE>IP control</TITLE>

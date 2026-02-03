@@ -1,4 +1,4 @@
-<?php 	
+﻿<?php 	
 session_register('itemsEnCesta'); 
 // Para los calculos
 session_register('sub_total');

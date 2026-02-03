@@ -1,4 +1,4 @@
-<?php 
+ï»¿<?php 
 /* * * * * * * * * * * * * * * * * * * * * * */
 /* Para busqueda desde " Texto Paginas Amarillas "
 /* Del www.pagina.net del texto que se copia de la pagina,
@@ -23,7 +23,7 @@ $email_vec_chivi = 0 ;
 
 echo ("Inicio Busqueda en Texto<BR>" );		
 echo ( "Send To add.link.php - webs_new_" . $db_p . "<BR>" );		
-//echo ( "Tamaño cadena: " . strlen ($texto_p) . "<BR>" );		
+//echo ( "Tamaï¿½o cadena: " . strlen ($texto_p) . "<BR>" );		
 
 		$email_cnt = 1 ;	 
 		$file = $texto_p;
@@ -71,7 +71,7 @@ $chars = preg_split('/ /', $str, -1, PREG_SPLIT_OFFSET_CAPTURE);
 		}
 	}
 }//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804");
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804");
 mysql_select_db("nelosa_nelosa",$link);
 
 		//echo (  "Texto: " . $texto . "<BR>") ;

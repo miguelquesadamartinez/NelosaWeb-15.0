@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 include ( "../../../eMiKi/headers/vbles_sesion.php" );
 setcookie("nelosa", $usr, time() + 31536000 , "/", "www.nelosa.net");
 ?>
@@ -36,7 +36,7 @@ body,td,th {
 </HEAD>
 <?php 
 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link) ;
  
 $result=mysql_query("UPDATE `Clientes` SET `Nombre` = '" . $hd_nom . "',`Apellido1` = '" . $hd_ape2 . "',`Apellido2` = '" . $hd_ape1 . "',

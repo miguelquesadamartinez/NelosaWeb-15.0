@@ -1,4 +1,4 @@
-<HTML><HEAD><TITLE>email search by eMiKi</TITLE>
+﻿<HTML><HEAD><TITLE>email search by eMiKi</TITLE>
 <META NAME="ROBOTS" content="NOFOLLOW,NOINDEX"/>
 <meta http-equiv='refresh' content=4;url=index.php>
 </HEAD><body bgcolor="#FFFFFF">
@@ -6,7 +6,7 @@
   <tr><td width="425" height="21"><div align="center"><strong><font color="#FF0000" face="Arial, Helvetica, sans-serif">Email search </font></strong></div>      <div align="center">
       </div></td></tr><tr><td height="21">
 <?php 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804");
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804");
 mysql_select_db("nelosa_nelosa",$link);
 
 mysql_query("CREATE TABLE `nelosa_nelosa`.`emails_" . $db . "` ( `email` varchar( 100 ) NOT NULL default '') " ,$link); 

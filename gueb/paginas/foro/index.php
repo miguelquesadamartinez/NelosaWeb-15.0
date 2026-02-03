@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 include ( "../../eMiKi/headers/vbles_sesion.php" );
 include ( "../../eMiKi/Funciones_PHP.php" );
 ?><!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//ES'>
@@ -156,13 +156,13 @@ a:active {
                   <tr>
                     <td width="797" class="Estilo12"><?php 
 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link) ;
-$link2=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link2=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link2) ;
-$link3=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link3=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link3) ;
-$link4=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link4=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link4) ;
 
 
@@ -180,7 +180,7 @@ while($row = mysql_fetch_array($result))
 		$email=(string)$row["email"];
 		$ind=(string)$row["indise"];
 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link) ;
 		// Nombre de quien pregunta
 		$result2=mysql_query("Select Nombre From Clientes Where email = '" . $email . "'",$link2); 
@@ -206,7 +206,7 @@ mysql_select_db("nelosa_nelosa",$link) ;
 		echo ("<div align='center'><HR><font color='#FF0000' size='2'>");
 		echo ("<a href='responder.php?indise=" . $ind . "'>Responder</a> - ");
 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link) ;
 
 $result_R=mysql_query("Select * From foro_resp where indise = " . $ind,$link); 
@@ -231,7 +231,7 @@ while($row_R = mysql_fetch_array($result_R))
 			$resp=(string)$row3["resp"];
 			$email_resp=(string)$row3["email"];
 		
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link) ;
 			// Nombre de quien responde
 			$result4=mysql_query("Select Nombre From Clientes Where email = '" . $email_resp . "'",$link4); 

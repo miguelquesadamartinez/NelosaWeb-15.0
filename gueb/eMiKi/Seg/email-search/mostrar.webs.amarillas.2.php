@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 /* * * * * * * * * * * * * * * * * * * * * * */
 /* Muestra los links que haya en la DB seleccionada
 /* Los prepara para mandar a search.php

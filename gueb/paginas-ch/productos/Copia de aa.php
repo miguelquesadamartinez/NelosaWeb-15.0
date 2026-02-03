@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 include ( "../../eMiKi/Headers/vbles_sesion.php" );
 include ( "../../eMiKi/Funciones_PHP.php" );
 $idioma = "fra" ;
@@ -90,7 +90,7 @@ BODY{color:"#0000FF"; font-family:Arial, Helvetica, sans-serif}
 
 $bar = 0 ;
 
-$link=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link) ;
 
 
@@ -101,7 +101,7 @@ $tmp = $ref ;
 	
 		$des=(string)$row["Des"];
 	
-$link2=mysql_connect("localhost","nelosa_nelosa","mqm1804") ;
+$link2=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa_textos",$link2) ;
 //echo ("select * from Descs_esp Where Ref = '$tmp'");  ;
 	$result2=mysql_query("select * from Descs_esp Where Ref = '$tmp'" ,$link2); 

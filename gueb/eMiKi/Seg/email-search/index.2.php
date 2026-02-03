@@ -1,4 +1,4 @@
-<?php session_register('arry'); session_register('arry_cnt'); ?>
+﻿<?php session_register('arry'); session_register('arry_cnt'); ?>
 <HTML>
 <HEAD>
 <TITLE>IP control</TITLE>
@@ -13,7 +13,7 @@ function obtener_tablas ()
 {
 	$dbname = 'nelosa_nelosa';
 	
-	if (!mysql_connect("localhost","nelosa_nelosa","mqm1804")) {	   echo 'Could not connect to mysql';	   exit;	}
+	if (!mysql_connect("mysql","nelosa_nelosa","mqm1804")) {	   echo 'Could not connect to mysql';	   exit;	}
 	$result = mysql_list_tables($dbname);
 	
 	if (!$result) {	   echo "DB Error, could not list tables\n";	   echo 'MySQL Error: ' . mysql_error();	   exit;	}
@@ -56,7 +56,7 @@ function obtener_tablas ()
             <?php
 	$dbname = 'nelosa_nelosa';
 	
-	mysql_connect("localhost","nelosa_nelosa","mqm1804");
+	mysql_connect("mysql","nelosa_nelosa","mqm1804");
 	$result = mysql_list_tables($dbname);
 	echo ('<select name="basededatos" id="basededatos">');
 	echo "<option></option>";
@@ -175,7 +175,7 @@ obtener_tablas ();
           <strong><font color="#0000FF" face="Arial, Helvetica, sans-serif"><?php
 	$dbname = 'nelosa_nelosa';
 	
-	mysql_connect("localhost","nelosa_nelosa","mqm1804");
+	mysql_connect("mysql","nelosa_nelosa","mqm1804");
 	$result = mysql_list_tables($dbname);
 	echo ('<select name="db_paramy" id="db_paramy">');
 	echo "<option></option>";
@@ -206,7 +206,7 @@ obtener_tablas ();
           <?php
 	$dbname = 'nelosa_nelosa';
 	
-	mysql_connect("localhost","nelosa_nelosa","mqm1804");
+	mysql_connect("mysql","nelosa_nelosa","mqm1804");
 	$result = mysql_list_tables($dbname);
 	echo ('<select name="db_paramy" id="db_paramy">');
 	echo "<option></option>";
