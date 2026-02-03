@@ -1,0 +1,2 @@
+
+<?php echo getext($idioma,"N000"); ?>

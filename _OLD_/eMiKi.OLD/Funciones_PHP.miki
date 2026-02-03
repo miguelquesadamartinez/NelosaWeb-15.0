@@ -1,0 +1,117 @@
+<?php 
+ function getext($idioma,$texte) {
+
+	$link_P=conectarse_param("nelosa_net_printers") ; 
+
+$result_P=mysql_query("Select * From txt_" . $idioma . " Where id = '" . $texte . "'",$link_P) ;
+	$row_P = mysql_fetch_array($result_P);
+	$texto=(string)$row_P["texto"];
+
+	$texto = ereg_replace ("%B4", "'", $texto);
+
+	if ($texto == "" ) $texto="Missing Text " . $texte . " !!";
+
+return $texto ;
+}
+function conectarse() 
+{ 
+   //$jost = "localhost";
+   //$jost = "nelosa.net";
+   
+   if (!($link=mysql_connect( $jost ,"nelosa","mqm1804"))) 
+   { 
+      echo "Error conectando a la base de datos."; 
+      exit(); 
+   } 
+    if (!mysql_select_db("nelosa_net",$link)) 
+   { 
+      echo "Error seleccionando la base de datos."; 
+      exit(); 
+   } 
+   return $link; 
+} 
+function conectarse_param($param) 
+{ 
+   //$jost = "localhost";
+   //$jost = "nelosa.net";
+   
+   if (!($link=mysql_connect( $jost ,"nelosa","mqm1804"))) 
+   {
+      echo "Error conectando a la base de datos."; 
+      exit(); 
+   } 
+    if (!mysql_select_db($param,$link)) 
+   { 
+      echo "Error seleccionando la base de datos."; 
+      exit(); 
+   } 
+   return $link; 
+}
+function conectarse_jost_param($jost,$param) 
+{ 
+   if (!($link=mysql_connect( $jost ,"nelosa","mqm1804"))) 
+   {
+      echo "Error conectando a la base de datos."; 
+      exit(); 
+   } 
+    if (!mysql_select_db($param,$link)) 
+   { 
+      echo "Error seleccionando la base de datos."; 
+      exit(); 
+   } 
+   return $link; 
+}
+
+function Get_Ip ()
+{
+  function iptype1 () 
+  {
+   if (getenv("HTTP_CLIENT_IP")) 
+     {
+      return getenv("HTTP_CLIENT_IP");
+     }
+   else 
+    {
+      return "none";
+    }
+  }
+  function iptype2 () 
+  {
+    if (getenv("HTTP_X_FORWARDED_FOR")) 
+     {
+      return getenv("HTTP_X_FORWARDED_FOR");
+     }  
+   else  
+     {
+      return "none";
+     }
+  }
+  function iptype3 ()
+  {
+    if (getenv("REMOTE_ADDR")) 
+      {
+        return getenv("REMOTE_ADDR");
+      }
+    else 
+      {
+        return "none";
+      }
+  }
+  
+ function ip() {
+    $ip1 = iptype1();
+    $ip2 = iptype2();
+    $ip3 = iptype3();
+    if (isset($ip1) && $ip1 != "none" && $ip1 != "unknown") {
+      return $ip1;
+    } else if (isset($ip2) && $ip2 != "none" && $ip2 != "unknown") {
+      return $ip2;
+    } else if (isset($ip3) && $ip3 != "none" && $ip3 != "unknown") {
+      return $ip3;
+    } else {
+      return "none";
+    }
+  }
+  return $ipaddress = ip();
+}
+?>

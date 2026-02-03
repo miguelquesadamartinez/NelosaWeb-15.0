@@ -1,0 +1,47 @@
+function calcular_portes($medio, $destino, $flete, $baf, $ton, $m3)
+{
+$var_medio = $medio;
+$var_destino = $destino;
+$var_flete = $flete;
+$var_baf = $baf;
+$var_ton = $ton ;
+$var_m3 = $m3 ;	
+
+if ( $m3 < 1 )
+{
+	$var_ton = 1 ;
+	$var_m3 = 1 ;	
+} 	
+		
+$res_11 = $flete * $ton ;
+$res_12 = $baf  * $ton ;
+
+$fin_1 = $res_11 + $res_12 ;
+
+$res_21 = $flete * $m3 ;
+$res_22 = $baf  * $m3 ;
+		
+$fin_2 = $res_21 + $res_22 ;
+
+if ( $fin_1 > $fin_2 ) 
+{
+	$parte_1 = $fin_1 ;
+}
+else
+{
+	$parte_1 = $fin_2 ;
+}
+
+$parte_2 = 18 * $m3 ;
+$parte_2 = $parte_2 + 40;
+$parte_2 = $parte_2 +( 3 * $ton);
+$parte_2 = $parte_2 + 40;
+$parte_2 = $parte_2 + 21;
+$parte_2 = $parte_2 + 30;
+
+if ($parte_2 < 139) $parte_2 = 139;
+
+$total = $parte_1 + $parte_2 ;
+
+return $total;
+}

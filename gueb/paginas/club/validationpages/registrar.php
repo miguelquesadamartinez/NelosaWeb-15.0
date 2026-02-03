@@ -1,0 +1,252 @@
+<?php 
+include ( "../../../eMiKi/headers/vbles_sesion.php" );
+?>
+<HTML><HEAD>
+<TITLE>Validacion y creacion de usuarios</TITLE>
+
+<META NAME="ROBOTS" content="NOFOLLOW,NOINDEX"/>
+
+<style TYPE="text/css">
+A:link {color:"#0000FF";  text-decoration: none;}
+A:hover{color:"#00FF00";  text-decoration: none;}
+A:visited {color: "#0000FF";  text-decoration: none;}
+H1{font-family:Arial, Helvetica, sans-serif}
+H2{font-family:Arial, Helvetica, sans-serif}
+H3{font-family:Arial, Helvetica, sans-serif}
+P{font-family:Arial, Helvetica, sans-serif}
+BODY{color:"#0000FF"; font-family:Arial, Helvetica, sans-serif}
+body,td,th {
+	font-weight: bold;
+	color: #0000FF;
+}
+.Estilo1 {
+	color: #0000FF;
+	font-weight: bold;
+}
+.Estilo11 {font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.Estilo4 {color: #FFFFFF; font-weight: bold; font-size: 12px; }
+.Estilo6 {font-size: 12px}
+.Estilo12 {
+	color: #FF0000;
+	font-weight: bold;
+}
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></HEAD>
+<body bgcolor="#000099">
+<div align="center">
+  <table width="650" border="0">
+    <tr>
+      <td><div align="center"><a href="../../../index.php"><img src="../../../../img/diseno.paginas/botones/home.gif" width="89" height="29" border="0"></a></div></td>
+      <td><div align="center"><a href="../../productos/index.php"><img src="../../../../img/diseno.paginas/botones/prods.gif" width="119" height="29" border="0"></a></div></td>
+      <td><div align="center"><a href="../../instrucciones/index.php"><img src="../../../../img/diseno.paginas/botones/ins.gif" width="132" height="29" border="0"></a></div></td>
+      <td><div align="center"><a href="../../varias/comprar.php"><img src="../../../../img/diseno.paginas/botones/comprar.gif" width="99" height="29" border="0"></a></div></td>
+      <td><div align="center"><a href="../../varias/soporte.php"><img src="../../../../img/diseno.paginas/botones/soporte.gif" width="96" height="29" border="0"></a></div></td>
+      <td><div align="center"><a href="../index.php"><img src="../../../../img/diseno.paginas/botones/club.gif" width="88" height="29" border="0"></a></div></td>
+    </tr>
+  </table>
+  <table width="765" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="13"><img src="../../../../img/diseno.paginas/base/arriba-up.png" width="765" height="16"></td>
+    </tr>
+  </table>
+  <table width="765" border="0" cellpadding="0" cellspacing="0" bgcolor="#FF0000">
+    <tr>
+      <td height="13"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="776" height="130">
+          <param name="movie" value="../../../../img/animaciones/banner-arriva.swf">
+          <param name="quality" value="high">
+          <embed src="../../../../img/animaciones/banner-arriva.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="776" height="130"></embed>
+      </object></td>
+    </tr>
+  </table>
+  <table width="765" border="0" bgcolor="#FFFF00">
+    <tr>
+      <td><table width="99%"  border="0" align="center">
+          <tr>
+            <td width="15%"><div align="center" class="Estilo11"><a href="../../varias/about.php">Quien somos</a></div></td>
+            <td width="29%"><div align="center" class="Estilo11"><a href="../../stp/index.php">Servicio Tecnico Paralelo </a></div></td>
+            <td width="30%"><div align="center" class="Estilo11"><a href="../../instrucciones/aa.procedures/index.php">Sistemas Anti Recarga </a></div></td>
+            <td width="26%"><div align="center" class="Estilo11"><a href="../../Mailing/index.php">Alta / Baja Mailing </a></div></td>
+          </tr>
+          <tr>
+            <td><div align="center" class="Estilo11"><a href="../../varias/donde.php">Donde estamos </a></div></td>
+            <td><div align="center" class="Estilo11"><a href="../../varias/software.php">Software para printables</a></div></td>
+            <td><div align="center" class="Estilo11"><a href="../../rincon/index.php">Rincon Tecnico </a></div></td>
+            <td><div align="center" class="Estilo11"><a href="../../distris/index.php">Acceso Tiendas y Distribuidores </a></div></td>
+          </tr>
+      </table></td>
+    </tr>
+  </table>
+  <table width="765" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="13"><img src="../../../../img/diseno.paginas/base/arriba-down.png" width="765" height="16"></td>
+    </tr>
+  </table>
+  <table width="745" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="13" bgcolor="#FFFFFF"><div align="center">
+          <table width="100%"  border="0">
+            <tr>
+              <td height="95" valign="top"><div align="center" class="Estilo6">
+                  <p>&nbsp;</p>
+                  <form action="check.php" name="Formulario_3" id="Formulario_3"  onSubmit="return validarDatos_3()" >
+                    <div align="center">
+                      <p><font face="Arial, Helvetica, sans-serif"><b>Validese con su usuario</b></font></p>
+                      <p><font face="Arial, Helvetica, sans-serif"> email
+                            <input name="user" type="text" size="20">
+Clave
+<input name="pwd" type="password" size="20">
+                      </font></p>
+                      <p><font face="Arial, Helvetica, sans-serif">
+                        <input type="submit" value="Login" name="Login" ="20">
+                      </font></p>
+                    </div>
+                  </form>
+                  <p align="center"><font face="Arial, Helvetica, sans-serif"><a href="forgetPwd.php"><font size="2">Olvido su password ? ! ? </font></a></font></p>
+                  <hr>
+                  <form action="createUser.php" name="Formulario_2" id="Formulario_2"  onSubmit="return validarDatos()" >
+                    <div align="center">
+                      <p><font face="Arial, Helvetica, sans-serif"> </font><font face="Arial, Helvetica, sans-serif"><b>O cree un nuevo usuario </b></font></p>
+                      <b><font face="Arial, Helvetica, sans-serif"> </font></b>
+                      <table border="0">
+                        <tr>
+                          <td width="115" bgcolor="#FFFFCC">
+                            <div align="right" class="Estilo12"><font size="2" face="Arial, Helvetica, sans-serif"><b>e-mail</b> / Usuario: </font></div></td>
+                          <td width="214"><b><font face="Arial, Helvetica, sans-serif">
+                            <input type="text" name="hd_usr" id="hd_usr" size="35" value="<?php echo htmlentities (  $usr ) ;?>">
+</font></b></td>
+                          <td bordercolor="#FFFFFF" bgcolor="#FFFFCC" width="95">
+                            <div align="right"><span class="Estilo12"><font face="Arial, Helvetica, sans-serif"><font size="2">Clave :</font> </font></span></div></td>
+                          <td bordercolor="#FFFFFF" bgcolor="#FFFFFF" width="246">
+                            <div align="left"><span class="Estilo1"><font face="Arial, Helvetica, sans-serif"><b><font face="Arial, Helvetica, sans-serif">
+                              <input name="hd_pwd" type="password" id="hd_pwd" value="<?php echo htmlentities (  $miki  ) ;?>" size="35">
+                            </font></b></font></span></div></td>
+                        </tr>
+                        <tr>
+                          <td width="115" bgcolor="#FFFFCC">
+                            <div align="right" class="Estilo12"><font size="2" face="Arial, Helvetica, sans-serif">Nombre : </font></div></td>
+                          <td width="214"><b><font face="Arial, Helvetica, sans-serif">
+                            <input type="text" name="hd_nom" id="hd_nombre2" size="35" value="<?php echo htmlentities (  $vs_nom ) ;?>">
+</font></b></td>
+                          <td width="95" bordercolor="#FFFFFF" bgcolor="#FFFFCC">
+                            <div align="right"><font face="Arial, Helvetica, sans-serif" color="#0000FF"><b><font face="Arial, Helvetica, sans-serif" size="2">Apellido 1 : </font></b></font></div></td>
+                          <td width="246"><b><font color="#000066" size="2"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font color="#000066" size="2"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font face="Arial, Helvetica, sans-serif">
+                            <input name="hd_ape1" type="text" id="hd_ape12" value="<?php echo htmlentities (  $vs_ape1 ) ;?>" size="35">
+                          </font></b></font></font></b></font></font><font face="Arial, Helvetica, sans-serif">                          </font></b></td>
+                        </tr>
+                        <tr>
+                          <td width="115" bgcolor="#FFFFCC" height="29">
+                            <div align="right"><font size="2" face="Arial, Helvetica, sans-serif"><b><font color="#0000FF">Telefono :</font></b></font></div></td>
+                          <td width="214" height="29"><font color="#000066" size="2"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font face="Arial, Helvetica, sans-serif">
+                            <input type="text" name="hd_tel" id="hd_nombre3" size="35" value="<?php echo htmlentities (  $vs_tel ) ;?>">
+                          </font></b> </font></font></td>
+                          <td width="95" bordercolor="#FFFFFF" bgcolor="#FFFFCC" height="29">
+                            <div align="right"><font size="2" face="Arial, Helvetica, sans-serif"><b><font color="#0000FF"> Apelido 2 : </font></b></font></div></td>
+                          <td width="246" height="29"><font face="Arial, Helvetica, sans-serif"><b><font face="Arial, Helvetica, sans-serif"><b><font face="Arial, Helvetica, sans-serif"><b><font color="#000066" size="2"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font face="Arial, Helvetica, sans-serif">
+                            <input name="hd_ape2" type="text" id="hd_ape22" value="<?php echo  htmlentities ( $vs_ape2 ) ;?>" size="35">
+                          </font></b></font></font></b></font></b> </font></b></font></td>
+                        </tr>
+                        <tr>
+                          <td width="115" bgcolor="#FFFFCC" height="29">
+                            <div align="right"><font size="2" face="Arial, Helvetica, sans-serif"><b><font color="#0000FF">C.I.F. / N.I.F. : </font></b></font></div></td>
+                          <td width="214" height="29"><font color="#000066" size="2"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font face="Arial, Helvetica, sans-serif">
+                            <input type="text" name="hd_doc" id="hd_nombre4" size="35" value="<?php echo htmlentities (  $vs_doc ) ;?>">
+                          </font></b> </font></font></td>
+                          <td width="95" bordercolor="#FFFFFF" bgcolor="#FFFFCC" height="29">
+                            <div align="right"><font face="Arial, Helvetica, sans-serif" color="#0000FF" size="2"><b>Empresa : </b></font></div></td>
+                          <td width="246" height="29"><font color="#000066" size="2"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font face="Arial, Helvetica, sans-serif"> </font><font color="#000066" size="2"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font color="#000066" size="2"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font face="Arial, Helvetica, sans-serif">                          </font></b></font></font></b></font></font><font face="Arial, Helvetica, sans-serif">
+                            <input type="text" name="hd_empresa" id="hd_nombre5" size="35" value="<?php echo htmlentities (  $vs_empresa ) ;?>"> 
+                          </font></b> </font></font></td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2" bgcolor="#FFFFCC" width="115">
+                            <div align="right"><font size="2" face="Arial, Helvetica, sans-serif"><b><font color="#0000FF">Direcci&oacute;n :</font></b></font></div></td>
+                          <td rowspan="2" width="214"><font color="#000066" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><b><font color="#000066" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><b><font face="Arial, Helvetica, sans-serif">
+                            <textarea name="hd_adr" cols="30" rows="2" id="hd_adr"><?php echo htmlentities (  $vs_adr ) ;?></textarea>
+                          </font></b></font><font face="Arial, Helvetica, sans-serif">                          </font></b></font><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font face="Arial, Helvetica, sans-serif"> </font></b> </font></td>
+                          <td bgcolor="#FFFFCC" width="95">
+                            <div align="right" class="Estilo12"><font size="2" face="Arial, Helvetica, sans-serif"><font size="2" face="Arial, Helvetica, sans-serif"><b>C. P. : </b></font></font></div></td>
+                          <td width="246"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font face="Arial, Helvetica, sans-serif"><b><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font face="Arial, Helvetica, sans-serif"><b><font color="#000066" size="2"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font face="Arial, Helvetica, sans-serif">
+                            <input name="hd_cp" type="text" id="hd_cp2" value="<?php echo  htmlentities ( $vs_cp ) ;?>" size="35">
+                          </font></b></font></font></b></font></b></font></b> </font></b> </font></td>
+                        </tr>
+                        <tr>
+                          <td width="95" bordercolor="#FFFFFF" bgcolor="#FFFFCC" height="32">
+                            <div align="right"><font size="2" face="Arial, Helvetica, sans-serif"><b><font color="#0000FF"> </font></b></font><font size="2" face="Arial, Helvetica, sans-serif"><b><font size="2" face="Arial, Helvetica, sans-serif"><b><font color="#0000FF">Poblacion</font></b></font><font color="#0000FF"> : </font></b></font><font face="Arial, Helvetica, sans-serif" color="#0000FF"></font></div></td>
+                          <td width="246" height="32"><font color="#000066" size="2">&nbsp;</font><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2">&nbsp; </font><font color="#000066" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><b><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"> </font></b></font><font face="Arial, Helvetica, sans-serif"><b><font face="Arial, Helvetica, sans-serif">
+                            <input type="text" name="hd_pob" id="hd_nombre6" size="35" value="<?php echo htmlentities (  $vs_pob ) ;?>">
+</font></b></font></td>
+                        </tr>
+                        <tr>
+                          <td width="115" bgcolor="#FFFFCC">
+                            <div align="right" class="Estilo12"><font size="2" face="Arial, Helvetica, sans-serif">Pais : </font></div></td>
+                          <td width="214"><font color="#000066" size="2"><font color="#000066" size="2"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font face="Arial, Helvetica, sans-serif"><b><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font face="Arial, Helvetica, sans-serif">
+                            <input name="hd_pais" type="text" id="hd_pais2" value="<?php echo htmlentities ( $vs_pais ) ;?>" size="35">
+                          </font></b></font></b></font></b></font></font></font><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2">&nbsp;                            </font>
+                          <td width="95" bordercolor="#FFFFFF" bgcolor="#FFFFCC">
+                            <div align="right" class="Estilo12"><font size="2" face="Arial, Helvetica, sans-serif"><font size="2" face="Arial, Helvetica, sans-serif"><b>Provincia</b></font> : </font></div>
+                          <td width="246"><font color="#000066" size="2"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font color="#000066" size="2"><font color="#000066" size="2"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font color="#000066" size="2"><font color="#000066" size="2"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font face="Arial, Helvetica, sans-serif"><b><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#000066" size="2"><b><font face="Arial, Helvetica, sans-serif">
+                          <input name="hd_prov" type="text" id="hd_prov2" value="<?php echo  htmlentities ( $vs_prov ) ;?>" size="35">
+                          </font></b></font></b></font></b></font></font></font></b></font></font></font><font face="Arial, Helvetica, sans-serif">                          </font></b></font></font>                       
+                        </tr>
+                      </table>
+                      En rojo los campos obligatorios <br>
+                      <p><font color="#FF0000" face="Arial, Helvetica, sans-serif">
+                        <input type="submit" name="iniciar2" value="Nuevo usuario">
+                      </font></p>
+                    </div>
+                  </form>
+                  <p><a href="../../../index.php"><img src="../../../../img/diseno.paginas/comunes/varias/back.jpg" width="67" height="35" border="0"></a></p>
+              </div></td>
+            </tr>
+          </table>
+      </div></td>
+    </tr>
+  </table>
+</div>
+<p align="center"><span class="Estilo4">www.nelosa.net - info@nelosa.net - Tel: 00 34 93 352 20 03 - Fax: 00 34 93 340 45 60<br>
+  C/ Velia, 81 - 08016 - Barcelona - Espa&ntilde;a</span></p>
+</body>
+	<script language='JavaScript' type='text/javascript'>
+		function validarDatos_3(){	
+			if ( Formulario_3.user.value==""){
+				alert ("Falta usuario !!");
+				return (false);
+			}
+			if ( Formulario_3.pwd.value==""){
+				alert ("Falta password !!");
+				return (false);
+			}
+		}
+		function validarDatos(){
+		
+			if ( Formulario_2.hd_usr.value=="" ) {
+				alert ("Falta usuario / email !!");
+				return (false); 
+			}
+			if ( Formulario_2.hd_pwd.value=="" ) {
+				alert ("Falta clave !!");
+				return (false); 
+			}
+			if ( Formulario_2.hd_nom.value=="" ) {
+				alert ("Falta nombre !!");
+				return (false); 
+			}
+			if ( Formulario_2.hd_pais.value=="" ) {
+				alert ("Falta pais !!");
+				return (false); 
+			}
+			if ( Formulario_2.hd_cp.value=="" ) {
+				alert ("Falta Codigo Postal !!");
+				return (false); 
+			}
+			if ( Formulario_2.hd_prov.value=="" ) {
+				alert ("Falta Provincia !!");
+				return (false); 
+			}
+			else			{
+					return (true);
+			}
+		
+		}
+	</script>

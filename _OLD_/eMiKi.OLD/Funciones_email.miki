@@ -1,0 +1,79 @@
+<?php 
+function buscar_emails_y_links ( $web_p, $db_p , $niveles_p)
+{
+$email_vec_cnt = 0 ;
+$links_vec_cnt = 0 ;
+echo ("Inicio one page: " . $web_p . " - " . $db_p . "<BR>" );		
+		$email_cnt = 1 ;	 
+		$file = fopen ( $web_p , "r" );
+		if (!$file) {
+		   echo "<p>Unable to open remote file. \n";
+		   exit;
+		}
+
+		while (!feof ($file)) {
+		   $line = fgets ($file, 1024);
+		   /* This only works if the title and its tags are on one line */
+
+ 			eregi('([A-Z0-9._%-]+@[A-Z0-9._%-]+\.[A-Z]{2,4})', $line, $mails); // Busca email en line y lo guarda en mails
+			
+			eregi ('http(.*)', $line, $links); // Busca LINKS en line y lo guarda en links
+
+				 for ($i = 0; $i <= 300; $i++) { // No se cuantos habra
+					if ( $mails[$i] != "" )	{ // si no esta vacio
+							 $email_vec_chivi = 0 ;
+							 for ($j = 0;$j <= $email_vec_cnt ; $j++) { // Por cada elemento de los que se hayan guardado
+								if ( $mails_vec[$j] == $mails[$i] )	{	// Si lo encuentra
+									$email_vec_chivi = 1 ; // Enciende el chivato
+								}
+							 }
+							if($email_vec_chivi == 0 ) { // Si NO ha encontrado
+								$mails_vec[$email_vec_cnt] = $mails[$i] ; // Lo guarda 
+								echo ( "
+								<form name='form1' method='post' action='add.php' target='_blank'>
+								<input name='web_paramy' type='hidden' value='" . $web_p . "'>
+								<input name='db_paramy' type='hidden' value='" . $db_p . "'>" . $email_vec_cnt . "
+								<input name='mail_paramy' type='text' value='" . $mails[$i] . "' size='75'>
+								<input type='submit' name='Submit' value='Enviar'>
+								</form>
+								") ;	
+								$email_vec_cnt = $email_vec_cnt + 1 ; // Y aumenta contador
+
+							}
+					}
+				}
+`
+				 for ($i = 0; $i <= 300; $i++) { // No se cuantos habra
+					if ( $links[$i] != "" )	{ // si no esta vacio
+							 $links_vec_chivi = 0 ;
+							 for ($j = 0;$j <= $links_vec_cnt ; $j++) { // Por cada elemento de los que se hayan guardado
+								if ( $links_vec[$j] == $links[$i] )	{	// Si lo encuentra
+									$links_vec_chivi = 1 ; // Enciende el chivato
+								}
+							 }
+							if($links_vec_chivi == 0 ) { // Si NO ha encontrado
+								$links_vec[$links_vec_cnt] = $links[$i] ; // Lo guarda 
+								echo ( "
+								<form name='form1' method='post' action='add.link.php' target='_blank'>
+								<input name='web_paramy' type='hidden' value='" . $web_p . "'>
+								<input name='db_paramy' type='hidden' value='" . $db_p . "'>" . $links_vec_cnt . "
+								<input name='mail_paramy' type='text' value='" . $links[$i] . "' size='75'>
+								<input type='submit' name='Submit' value='Enviar'>
+								</form>
+								") ;	
+								$links_vec_cnt = $links_vec_cnt + 1 ; // Y aumenta contador
+
+							}
+					}
+				}
+`
+		}
+
+
+							/*$link2=mysql_connect("localhost","nelosa","mqm1804");
+							mysql_select_db("nelosa_net",$link2);
+							mysql_query("UPDATE `" . $base . "` SET `email" . $email_cnt . "` = ' " . $mails[$i] . "' WHERE `web` = 'a'" ,$link2); */
+						 	$email_cnt = $email_cnt + 1 ;
+					 
+		fclose($file);
+}//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
