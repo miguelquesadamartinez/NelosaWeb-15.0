@@ -25,6 +25,7 @@ RUN { \
     echo 'magic_quotes_gpc = Off'; \
     echo 'session.auto_start = 0'; \
     echo 'default_charset = "ISO-8859-1"'; \
+    echo 'date.timezone = "Europe/Madrid"'; \
     echo 'max_execution_time = 300'; \
     echo 'memory_limit = 256M'; \
     echo 'post_max_size = 32M'; \
