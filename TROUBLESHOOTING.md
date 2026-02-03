@@ -58,7 +58,7 @@ mysql_connect("mysql", "nelosa_nelosa", "mqm1804")
 
 ```bash
 # Entrar a MySQL
-docker exec -it nelosa_mysql mysql -u nelosa_nelosa -pmqm1804
+docker exec -it nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804
 
 # Verificar bases de datos
 SHOW DATABASES;
@@ -77,10 +77,10 @@ exit;
 
 ```bash
 # Reimportar base de datos
-docker exec -i nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios/Copias DB´s/nelosa.net.sql"
+docker exec -i nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios/Copias DB´s/nelosa.net.sql"
 
 # Verificar importación
-docker exec -it nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 -e "SELECT COUNT(*) as tables FROM information_schema.tables WHERE table_schema='nelosa_nelosa'"
+docker exec -it nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 -e "SELECT COUNT(*) as tables FROM information_schema.tables WHERE table_schema='nelosa_nelosa'"
 ```
 
 ---
@@ -176,10 +176,10 @@ docker exec nelosa_web cat /etc/apache2/apache2.conf | grep AllowOverride
 
 ```bash
 # Verificar charset en MySQL
-docker exec -it nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 -e "SHOW VARIABLES LIKE 'char%';"
+docker exec -it nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 -e "SHOW VARIABLES LIKE 'char%';"
 
 # Verificar collation de tablas
-docker exec -it nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 -e "SELECT table_name, table_collation FROM information_schema.tables WHERE table_schema='nelosa_nelosa' LIMIT 5;"
+docker exec -it nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 -e "SELECT table_name, table_collation FROM information_schema.tables WHERE table_schema='nelosa_nelosa' LIMIT 5;"
 ```
 
 #### Solución
@@ -290,7 +290,7 @@ docker exec -i nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < bac
 docker stats
 
 # Ver logs lentos de MySQL
-docker exec nelosa_mysql mysql -u root -prootpassword -e "SHOW VARIABLES LIKE 'slow_query%';"
+docker exec nelosa_mysql2 mysql -u root -prootpassword -e "SHOW VARIABLES LIKE 'slow_query%';"
 ```
 
 #### Solución
@@ -381,7 +381,7 @@ docker ps -a --format "{{.Names}}" | xargs -I {} sh -c 'echo "{}:"; docker inspe
 
 # Limpiar logs
 truncate -s 0 $(docker inspect --format='{{.LogPath}}' nelosa_web)
-truncate -s 0 $(docker inspect --format='{{.LogPath}}' nelosa_mysql)
+truncate -s 0 $(docker inspect --format='{{.LogPath}}' nelosa_mysql2)
 ```
 
 **B. Limitar tamaño en docker-compose.yml**

@@ -11,7 +11,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 # Verificar que el contenedor MySQL esté corriendo
-if ! docker ps | grep -q nelosa_mysql; then
+if ! docker ps | grep -q nelosa_mysql2; then
     echo "Error: El contenedor MySQL no está corriendo."
     echo "Ejecuta: docker-compose up -d"
     exit 1
@@ -23,11 +23,11 @@ sleep 5
 
 # Importar base de datos principal
 echo "${GREEN}Importando nelosa_nelosa...${NC}"
-docker exec -i nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios/Copias DB´s/nelosa.net.sql"
+docker exec -i nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios/Copias DB´s/nelosa.net.sql"
 
 # Importar base de datos de textos
 echo "${GREEN}Importando nelosa_nelosa_textos...${NC}"
-docker exec -i nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa_textos < "Varios/Copias DB´s/nelosa_net_textos.sql"
+docker exec -i nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa_textos < "Varios/Copias DB´s/nelosa_net_textos.sql"
 
 echo ""
 echo "========================================="

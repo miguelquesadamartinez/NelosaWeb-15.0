@@ -6,7 +6,7 @@ echo Importando bases de datos Nelosa...
 echo =========================================
 
 REM Verificar que el contenedor MySQL este corriendo
-docker ps | findstr nelosa_mysql >nul
+docker ps | findstr nelosa_mysql2 >nul
 if errorlevel 1 (
     echo Error: El contenedor MySQL no esta corriendo.
     echo Ejecuta: docker-compose up -d
@@ -19,11 +19,11 @@ timeout /t 5 /nobreak >nul
 
 REM Importar base de datos principal
 echo Importando nelosa_nelosa...
-docker exec -i nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios\Copias DB´s\nelosa.net.sql"
+docker exec -i nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios\Copias DB´s\nelosa.net.sql"
 
 REM Importar base de datos de textos
 echo Importando nelosa_nelosa_textos...
-docker exec -i nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa_textos < "Varios\Copias DB´s\nelosa_net_textos.sql"
+docker exec -i nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa_textos < "Varios\Copias DB´s\nelosa_net_textos.sql"
 
 echo.
 echo =========================================

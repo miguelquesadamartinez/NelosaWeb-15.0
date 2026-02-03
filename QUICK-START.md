@@ -51,7 +51,7 @@ docker-compose restart
 docker-compose down
 
 # Entrar a MySQL
-docker exec -it nelosa_mysql mysql -u nelosa_nelosa -pmqm1804
+docker exec -it nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804
 
 # Ver estado
 docker-compose ps

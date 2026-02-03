@@ -4,7 +4,7 @@ services:
   # MySQL 5.7 (compatible con PHP 4/5 legacy code)
   mysql:
     image: mysql:5.7
-    container_name: nelosa_mysql
+    container_name: nelosa_mysql2
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
@@ -42,7 +42,7 @@ services:
   # phpMyAdmin para gestión de base de datos
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
-    container_name: nelosa_phpmyadmin
+    container_name: nelosa_phpmyadmin2
     restart: always
     ports:
       - "8089:80"

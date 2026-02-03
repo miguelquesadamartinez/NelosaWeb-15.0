@@ -69,7 +69,7 @@ echo.
 
 REM Verificar contenedores
 echo 5. Verificando contenedores...
-docker ps 2>nul | findstr nelosa_mysql >nul
+docker ps 2>nul | findstr nelosa_mysql2 >nul
 if errorlevel 1 (
     echo [!] Contenedor MySQL NO esta corriendo
     set mysql_running=0
@@ -87,7 +87,7 @@ if errorlevel 1 (
     set web_running=1
 )
 
-docker ps 2>nul | findstr nelosa_phpmyadmin >nul
+docker ps 2>nul | findstr nelosa_phpmyadmin2 >nul
 if errorlevel 1 (
     echo [!] Contenedor phpMyAdmin NO esta corriendo
 ) else (

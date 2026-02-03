@@ -26,7 +26,7 @@ Los scripts SQL de backup están en `Varios/Copias DB´s/`. Para importar:
 
 ```bash
 # 1. Entrar al contenedor MySQL
-docker exec -it nelosa_mysql bash
+docker exec -it nelosa_mysql2 bash
 
 # 2. Base de datos principal (OBLIGATORIO)
 mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < /backups/nelosa.net.sql
@@ -66,19 +66,19 @@ mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < /backups/nelosa.net.printers.2.
 
 ```bash
 # Base de datos principal
-docker exec -i nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios/Copias DB´s/nelosa.net.sql"
+docker exec -i nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios/Copias DB´s/nelosa.net.sql"
 
 # Base de datos de textos
-docker exec -i nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa_textos < "Varios/Copias DB´s/nelosa_net_textos.sql"
+docker exec -i nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa_textos < "Varios/Copias DB´s/nelosa_net_textos.sql"
 
 # Base de datos de impresoras (opcional)
-docker exec -i nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios/Copias DB´s/nelosa.net.printers.sql"
+docker exec -i nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios/Copias DB´s/nelosa.net.printers.sql"
 
 # Base de datos eMiKi (opcional)
-docker exec -i nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios/Copias DB´s/nelosa_net_eMiKi.sql"
+docker exec -i nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios/Copias DB´s/nelosa_net_eMiKi.sql"
 
 # Base de datos de emails (opcional)
-docker exec -i nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios/Copias DB´s/nelosa.net.emails.sql"
+docker exec -i nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios/Copias DB´s/nelosa.net.emails.sql"
 ```
 
 ## Charset y Collation

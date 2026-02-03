@@ -121,7 +121,7 @@ chmod +x docker/import-databases.sh
 
 ```bash
 # Entrar al contenedor MySQL
-docker exec -it nelosa_mysql bash
+docker exec -it nelosa_mysql2 bash
 
 # Importar base de datos principal
 mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < /backups/nelosa.net.sql
@@ -346,7 +346,7 @@ docker-compose logs web
 ls "Varios/Copias DB´s/"
 
 # Reimportar manualmente
-docker exec -i nelosa_mysql mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios/Copias DB´s/nelosa.net.sql"
+docker exec -i nelosa_mysql2 mysql -u nelosa_nelosa -pmqm1804 nelosa_nelosa < "Varios/Copias DB´s/nelosa.net.sql"
 ```
 
 ## 📚 Documentación Adicional

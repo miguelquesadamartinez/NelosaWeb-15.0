@@ -109,7 +109,7 @@ echo ""
 
 # Verificar contenedores
 echo "6️⃣  Verificando contenedores..."
-if docker ps --format '{{.Names}}' | grep -q nelosa_mysql; then
+if docker ps --format '{{.Names}}' | grep -q nelosa_mysql2; then
     echo -e "$check_mark Contenedor MySQL está corriendo"
     mysql_status="running"
 else
@@ -125,7 +125,7 @@ else
     web_status="stopped"
 fi
 
-if docker ps --format '{{.Names}}' | grep -q nelosa_phpmyadmin; then
+if docker ps --format '{{.Names}}' | grep -q nelosa_phpmyadmin2; then
     echo -e "$check_mark Contenedor phpMyAdmin está corriendo"
     phpmyadmin_status="running"
 else
