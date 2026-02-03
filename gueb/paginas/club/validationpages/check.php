@@ -1,5 +1,6 @@
 ﻿<?php 
-include ( "../../../eMiKi/headers/vbles_sesion.php" );
+include_once ( "../../../eMiKi/headers/vbles_sesion.php" );
+include_once ( "../../../eMiKi/Funciones_PHP.php" );
 ?>
 <HTML><HEAD>
 <TITLE>Validacion y creacion de usuarios</TITLE>
@@ -29,6 +30,13 @@ body,td,th {
 <body bgcolor="#000099">
 <?php 	
 
+// Inicializar variables para evitar notices
+$user = isset($_POST['user']) ? $_POST['user'] : (isset($_GET['user']) ? $_GET['user'] : "");
+$pwd = isset($_POST['pwd']) ? $_POST['pwd'] : (isset($_GET['pwd']) ? $_GET['pwd'] : "");
+$numi = "";
+$result = null;
+$algo = "";
+
 //echo "USer: " . $user . " - PWD: " . $pwd . "<BR>" ;
 
 $link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
@@ -52,7 +60,7 @@ else
 	
 	$result=mysql_query("select * from Datas where mail = '". $user ."' AND otro='" . $pwd . "'" ,$link); 
 	$row = mysql_fetch_array($result);
-		
+	  
 	$numi=(string)$row["mail"];
 	if ($numi=="")
 	{
@@ -103,7 +111,10 @@ else
 		//echo "Roger 3<BR>" ;
 	}
 
-	mysql_free_result($result);  
+	// Liberar recursos solo si $result es válido
+	if ($result !== null && is_resource($result)) {
+		mysql_free_result($result);
+	}
 	mysql_close($link);
 ?>
 <div align="center">

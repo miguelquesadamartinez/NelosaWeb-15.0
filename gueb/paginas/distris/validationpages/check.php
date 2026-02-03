@@ -1,5 +1,6 @@
 ﻿<?php 
-include ( "../../../eMiKi/headers/vbles_sesion.php" );
+include_once ( "../../../eMiKi/headers/vbles_sesion.php" );
+include_once ( "../../../eMiKi/Funciones_PHP.php" );
 ?>
 <HTML><HEAD>
 <TITLE>Validacion y creacion de usuarios</TITLE>
@@ -29,7 +30,13 @@ body,td,th {
 <body bgcolor="#000099">
 <?php 	
 
-//echo "USer: " . $user . " - PWD: " . $pwd . "<BR>" ;
+$user = isset($_POST['user']) ? $_POST['user'] : (isset($_GET['user']) ? $_GET['user'] : "");
+$pwd = isset($_POST['pwd']) ? $_POST['pwd'] : (isset($_GET['pwd']) ? $_GET['pwd'] : "");
+$numi = "";
+$result = null;
+$algo = "";
+
+echo "USer: " . $user . " - PWD: " . $pwd . "<BR>" ;
 
 $link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link) ;

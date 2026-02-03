@@ -339,6 +339,17 @@ docker exec nelosa_web tail -f /var/log/apache2/error.log
 docker-compose logs web
 ```
 
+### Logs con aplicacion propia
+
+```bash
+# Imprimr un texto con variable, array o objeto
+logVariable("User query result", $row, "DEBUG", "JuJu");
+
+# Imprimir un texto
+logError("Pass: " . $pwd, "PASS");
+
+```
+
 ### Base de datos vacía después de importar
 
 ```bash
