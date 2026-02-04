@@ -103,8 +103,10 @@ body,td,th {
   <B>5 .</B> Despues del relleno, ponga la tapa.</FONT></P>
               <P>
                 <?php
-			  $resul = "../aa.procedures/".$proced.".php" ;
-			  if ($proced != "." AND $proced != "") include ($resul);
+			  if (isset($proced)) {
+          $resul = "../procedures/".$proced.".php" ;
+          if ($proced != "." AND $proced != "") include ($resul);
+        }
 			  ?>
               </P>
               <p align="left"><br>

@@ -120,8 +120,10 @@ body,td,th {
               <p>&nbsp;              </p>
               <p align="left">
                 <?php
-			  $resul = "../aa.procedures/".$proced.".php" ;
-			  if ($proced != "." AND $proced != "") include ($resul);
+			  if (isset($proced)) {
+          $resul = "../procedures/".$proced.".php" ;
+          if ($proced != "." AND $proced != "") include ($resul);
+        }
 			  ?>
                 <br>
               </p></td>

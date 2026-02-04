@@ -114,8 +114,10 @@ body,td,th {
                 </ol>              
               <p align="left" class="Estilo5">
                 <?php
-			  $resul = "../aa.procedures/".$proced.".php" ;
-			  if ($proced != "." AND $proced != "") include ($resul);
+			  if (isset($proced)) {
+          $resul = "../procedures/".$proced.".php" ;
+          if ($proced != "." AND $proced != "") include ($resul);
+        }
 			  ?>
 </p>              
               </td>

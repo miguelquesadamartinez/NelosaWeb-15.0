@@ -121,8 +121,10 @@ HP Q2673A - HP Q2674A</p>
               <p></p>
               <p>
                 <?php
-			  $resul = "../aa.procedures/".$proced.".php" ;
-			  if ($proced != "." AND $proced != "") include ($resul);
+			  if (isset($proced)) {
+          $resul = "../procedures/".$proced.".php" ;
+          if ($proced != "." AND $proced != "") include ($resul);
+        }
 			  ?>
               </p>              <p align="left"><br>
               </p></td>

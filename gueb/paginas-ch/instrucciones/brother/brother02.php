@@ -65,8 +65,10 @@ body,td,th {
               <P><?php echo getext($idioma,"Serie 01"); //Instrucciones recarga ?></P>
               <P>
                 <?php
-			  $resul = "../procedures/".$proced.".php" ;
-			  if ($proced != "." AND $proced != "") include ($resul);
+			  if (isset($proced)) {
+          $resul = "../procedures/".$proced.".php" ;
+          if ($proced != "." AND $proced != "") include ($resul);
+        }
 			  ?>
               </P>
               <p align="left"><br>

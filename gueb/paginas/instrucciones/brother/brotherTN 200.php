@@ -116,8 +116,10 @@ body,td,th {
                   puesto en la impresora, compruebe que este no pierde toner.</font></p>
                   <p>
                     <?php
-			  $resul = "../aa.procedures/".$proced.".php" ;
-			  if ($proced != "." AND $proced != "") include ($resul);
+			  if (isset($proced)) {
+          $resul = "../procedures/".$proced.".php" ;
+          if ($proced != "." AND $proced != "") include ($resul);
+        }
 			  ?>
                     <br>
                     <br>

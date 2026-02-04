@@ -62,8 +62,10 @@ $idioma = "fra" ;
               <p><?php echo getext($idioma,"Instrucciones HP 01"); //Instrucciones recarga ?></p>
               <p>
                 <?php
-			  $resul = "../procedures/".$proced.".php" ;
-			  if ($proced != "." AND $proced != "") include ($resul);
+			  if (isset($proced)) {
+          $resul = "../procedures/".$proced.".php" ;
+          if ($proced != "." AND $proced != "") include ($resul);
+        }
 			  ?>
               </p>
               <p><br>

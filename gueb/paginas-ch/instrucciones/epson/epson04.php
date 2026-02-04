@@ -86,8 +86,10 @@ $idioma = "fra" ;
               <p></p>
               <p>
                 <?php
-			  $resul = "../procedures/".$proced.".php" ;
-			  if ($proced != "." AND $proced != "") include ($resul);
+			  if (isset($proced)) {
+          $resul = "../procedures/".$proced.".php" ;
+          if ($proced != "." AND $proced != "") include ($resul);
+        }
 			  ?>
               </p>              <p align="left"><br>
               </p>

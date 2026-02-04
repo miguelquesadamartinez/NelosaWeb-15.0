@@ -1,6 +1,6 @@
 <?php 
-if ( $jost == "" ) $jost = "nelosa.net" ;
 include ( "../../eMiKi/headers/vbles_sesion.php" );
+if ( $jost == "" ) $jost = "nelosa.net" ;
 ?>
 <!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//ES'>
 <HTML>

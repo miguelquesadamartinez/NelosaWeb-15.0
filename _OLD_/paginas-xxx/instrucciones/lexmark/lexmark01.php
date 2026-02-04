@@ -47,8 +47,10 @@ include ( "../../../eMiKi/Funciones_PHP.php");
 <p><?php echo getext($idioma,"Instrucciones Serie 02"); //Instrucciones recarga ?></p>
 <p>
   <?php
-			  $resul = "../procedures/".$proced.".php" ;
-			  if ($proced != "." AND $proced != "") include ($resul);
+			  if (isset($proced)) {
+          $resul = "../procedures/".$proced.".php" ;
+          if ($proced != "." AND $proced != "") include ($resul);
+        }
 			  ?>
 </p></td>
           </tr>

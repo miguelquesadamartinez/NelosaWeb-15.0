@@ -101,8 +101,10 @@ body,td,th {
                   <strong>6.</strong> Cierre el orificio de relleno con adhesivo PVC, pinch&aacute;ndolo para dejar un peque&ntilde;o respiradero.</p>
               <p>
                 <?php
-			  $resul = "../aa.procedures/".$proced.".php" ;
-			  if ($proced != "." AND $proced != "") include ($resul);
+			  if (isset($proced)) {
+          $resul = "../procedures/".$proced.".php" ;
+          if ($proced != "." AND $proced != "") include ($resul);
+        }
 			  ?>
               </p></td>
           </tr>

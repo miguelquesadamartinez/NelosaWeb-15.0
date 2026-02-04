@@ -83,8 +83,10 @@ body,td,th {
               </p>
               <p>
                 <?php
-			  $resul = "../procedures/".$proced.".php" ;
-			  if ($proced != "." AND $proced != "") include ($resul);
+			  if (isset($proced)) {
+          $resul = "../procedures/".$proced.".php" ;
+          if ($proced != "." AND $proced != "") include ($resul);
+        }
 			  ?>
               </p></td>
           </tr>
