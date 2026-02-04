@@ -1,4 +1,4 @@
-﻿<?php        
+<?php        
 if (!($link=mysql_connect( "localhost" ,"nelosa","mqm1804")))    { 
   echo "Error conectando a la base de datos."; 
   exit(); 

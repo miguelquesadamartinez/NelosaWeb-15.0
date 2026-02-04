@@ -1,4 +1,4 @@
-﻿<?php 	
+<?php 	
 include("../../../Funciones_PHP.php"); 
 $link=conectarse(); 
 ?>

@@ -1,4 +1,4 @@
-﻿<title>Modificar tablas de nelosa_nelosa_emails </title>
+<title>Modificar tablas de nelosa_nelosa_emails </title>
   <p>Mantenimiento de bases de datos </p>
     <?php
 	

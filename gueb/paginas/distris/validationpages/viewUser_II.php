@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 include ( "../../../eMiKi/headers/vbles_sesion.php" );
 setcookie("nelosa", $usr, time() + 31536000 , "/", "www.nelosa.net");
 ?>

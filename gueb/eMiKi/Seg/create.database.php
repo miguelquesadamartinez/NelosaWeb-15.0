@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 include("../Funciones_PHP.php");
 echo ($db ."<BR>");
   if (!($link=mysql_connect("mysql","nelosa","mqm1804"))) 

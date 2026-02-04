@@ -1,4 +1,4 @@
-﻿<HTML><HEAD>
+<HTML><HEAD>
 <TITLE>Mailing Nelosa</title>
 <meta name="title" content=""/>
 <meta http-equiv="title" content=""/>

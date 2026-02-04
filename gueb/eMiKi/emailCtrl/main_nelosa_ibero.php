@@ -1,4 +1,4 @@
-﻿<HTML><HEAD><TITLE>Menu de control de emails</TITLE>
+<HTML><HEAD><TITLE>Menu de control de emails</TITLE>
 <META NAME="ROBOTS" content="NOFOLLOW,NOINDEX"/>
 </HEAD>
 <BODY bgcolor="#FFFFFF" text="#0000FF" link="#0000FF" vlink="#0000FF" alink="#0000FF">

@@ -1,4 +1,4 @@
-﻿<?php 	
+<?php 	
 session_register('itemsEnCesta'); 
 include("../../../../eMiKi/Funciones_PHP.php"); 
 

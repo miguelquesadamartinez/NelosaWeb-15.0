@@ -1,4 +1,4 @@
-﻿<?php session_register('impresora'); 
+<?php session_register('impresora'); 
 if ( $VBimpresora <> "" ) $impresora = $VBimpresora ;
 ?>
 <!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//ES'>

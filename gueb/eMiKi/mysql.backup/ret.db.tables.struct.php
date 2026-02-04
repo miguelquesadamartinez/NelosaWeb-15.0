@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 //$tablename = $_GET[$tablenamep];     
 $tablename = $param;
 include("../Funciones.PHP.MySql.BackUp.php");

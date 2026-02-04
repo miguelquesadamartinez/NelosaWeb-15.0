@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
 	this class encapsulates the PHP mail() function.
 	implements CC, Bcc, Priority headers

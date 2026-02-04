@@ -1,6 +1,27 @@
-﻿<?php 
-include ( "../../../eMiKi/headers/vbles_sesion.php" );
-setcookie("nelosa", $usr, time() + 31536000 , "/", "www.nelosa.net");
+<?php
+//setcookie("nelosa", '1', time() + 31536000 , "/", "www.nelosa.net");
+include_once ( "../../../eMiKi/headers/vbles_sesion.php" );
+include_once ( "../../../eMiKi/Funciones_PHP.php" );
+
+logVariable('Contenido vs_email 2: ', $vs_email, "DEBUG", "JUJÚ");
+
+// Inicializar todas las variables desde la sesión
+$vs_email = isset($_SESSION['vs_email']) ? $_SESSION['vs_email'] : '';
+$vs_nom = isset($_SESSION['vs_nom']) ? $_SESSION['vs_nom'] : '';
+$vs_ape1 = isset($_SESSION['vs_ape1']) ? $_SESSION['vs_ape1'] : '';
+$vs_ape2 = isset($_SESSION['vs_ape2']) ? $_SESSION['vs_ape2'] : '';
+$vs_cp = isset($_SESSION['vs_cp']) ? $_SESSION['vs_cp'] : '';
+$vs_prov = isset($_SESSION['vs_prov']) ? $_SESSION['vs_prov'] : '';
+$vs_pais = isset($_SESSION['vs_pais']) ? $_SESSION['vs_pais'] : '';
+$vs_pob = isset($_SESSION['vs_pob']) ? $_SESSION['vs_pob'] : '';
+$vs_tel = isset($_SESSION['vs_tel']) ? $_SESSION['vs_tel'] : '';
+$vs_doc = isset($_SESSION['vs_doc']) ? $_SESSION['vs_doc'] : '';
+$vs_empresa = isset($_SESSION['vs_empresa']) ? $_SESSION['vs_empresa'] : '';
+$vs_adr = isset($_SESSION['vs_adr']) ? $_SESSION['vs_adr'] : '';
+$miki = isset($_SESSION['miki']) ? $_SESSION['miki'] : '';
+
+logVariable('Contenido _SESSION: ', $_SESSION['vs_email'], "DEBUG", "JUJÚ");
+
 ?>
 <HTML>
 <HEAD>
@@ -99,7 +120,7 @@ body,td,th {
                               <td width="115" bgcolor="#FFFFCC">
                                 <div align="right" class="Estilo12 Estilo13"><font size="2" face="Arial, Helvetica, sans-serif"><b>e-mail</b> / Usuario: </font></div></td>
                               <td width="214" bgcolor="#FFFFCC"><span class="Estilo13"><b><font face="Arial, Helvetica, sans-serif"><?php echo htmlentities ( $vs_email ) ; ?>
-                                <input name="hd_email" type="hidden" id="hd_email" value="<?php echo $vs_email ; ?>">
+                                <input name="hd_email" type="hidden" id="hd_email" value="<?php echo ($vs_email) ; ?>">
                               </font></b></span></td>
                               <td bordercolor="#FFFFFF" bgcolor="#FFFFCC" width="95">
                                 <div align="right" class="Estilo13"><strong><font face="Arial, Helvetica, sans-serif"><font size="2">Clave :</font> </font></strong></div></td>
@@ -180,7 +201,7 @@ body,td,th {
                             <tr>
                               <td colspan="4" bgcolor="#FFFFCC"><div align="center" class="Estilo13"><font face="Arial, Helvetica, sans-serif">
                                 <?PHP
-							  if ($algo=="0"){
+							  if (isset($algo) && $algo=="0"){
 							  	echo "<input type='submit' name='iniciar2' value='Modificar usuario'>";
 							  }
             				  ?>

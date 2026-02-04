@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 include ( "../../eMiKi/headers/vbles_sesion.php" );
 ?>
 <HTML>

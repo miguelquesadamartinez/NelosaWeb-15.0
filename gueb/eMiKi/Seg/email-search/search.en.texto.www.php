@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 /* * * * * * * * * * * * * * * * * * * * * * */
 /* Para busqueda desde " Texto Paginas Amarillas "
 /* Del www.pagina.net del texto que se copia de la pagina,

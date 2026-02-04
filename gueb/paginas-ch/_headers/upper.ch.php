@@ -1,4 +1,4 @@
-﻿  <div align="center">
+  <div align="center">
   <table width="763" border="0" cellpadding="0" cellspacing="0">
       <tr>
         <td height="13"><img src="../../imagenes/index/arriva.png" width="765" height="16"></td>

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 function create_table_sql_string($tablename)
 {
 // echo "Entra create_table_sql_string<BR><BR>";

@@ -1,4 +1,4 @@
-﻿<HTML><HEAD><TITLE>email search by eMiKi</TITLE>
+<HTML><HEAD><TITLE>email search by eMiKi</TITLE>
 <META NAME="ROBOTS" content="NOFOLLOW,NOINDEX"/>
 <style TYPE="text/css">
 A:link {color:"#0000FF";  text-decoration: none;}

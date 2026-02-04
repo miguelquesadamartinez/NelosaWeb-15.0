@@ -1,4 +1,4 @@
-﻿<?php 	include("../../eMiKi/headers/vbles_sesion.php");
+<?php 	include("../../eMiKi/headers/vbles_sesion.php");
 $idioma = "esp" ; 
 ?>
 <!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//ES'>

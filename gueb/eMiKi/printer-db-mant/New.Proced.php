@@ -1,4 +1,4 @@
-﻿<?php session_register('usr'); session_register('v_Pais'); session_register('tabla'); session_register('tmpy'); 
+<?php session_register('usr'); session_register('v_Pais'); session_register('tabla'); session_register('tmpy'); 
 if ( $VBtabla <> "" ) $tabla =  strtolower ( $VBtabla ) ;
 $tmpy = $_Ins;
 ?>

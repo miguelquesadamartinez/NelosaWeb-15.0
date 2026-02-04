@@ -1,4 +1,4 @@
-﻿<?
+<?
 include("../Funciones_PHP.php");
 $link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 $link2=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;

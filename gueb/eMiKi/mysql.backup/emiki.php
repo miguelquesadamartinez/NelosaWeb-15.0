@@ -1,4 +1,4 @@
-﻿<p>&nbsp;</p>
+<p>&nbsp;</p>
 <?php
 // Defines
 DEFINE ("DB_SELECT_FORM", 1);

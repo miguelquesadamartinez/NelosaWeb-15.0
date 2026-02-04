@@ -1,4 +1,4 @@
-﻿<style type="text/css">
+<style type="text/css">
 <!--
 .Estilo14 {
 	font-family: Arial, Helvetica, sans-serif;

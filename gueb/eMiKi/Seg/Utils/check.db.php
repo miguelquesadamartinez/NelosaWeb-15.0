@@ -1,4 +1,4 @@
-﻿<HTML>
+<HTML>
 <HEAD>
 <TITLE>Check DB</TITLE>
 

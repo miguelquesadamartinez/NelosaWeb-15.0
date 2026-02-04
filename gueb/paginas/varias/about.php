@@ -1,4 +1,4 @@
-﻿<?php 	include("../../eMiKi/headers/vbles_sesion.php");		?>
+<?php 	include("../../eMiKi/headers/vbles_sesion.php");		?>
 <HTML><HEAD>
 <TITLE>Nelosa Accesorios  -  Quien Somos</title>
 <meta name="title" content="Nelosa Accesorios  -  Quien Somos"/>

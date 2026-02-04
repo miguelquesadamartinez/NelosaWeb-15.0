@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 include_once ( "../../../eMiKi/headers/vbles_sesion.php" );
 include_once ( "../../../eMiKi/Funciones_PHP.php" );
 ?>
@@ -37,7 +37,13 @@ $numi = "";
 $result = null;
 $algo = "";
 
-//echo "USer: " . $user . " - PWD: " . $pwd . "<BR>" ;
+// Variables legacy (no utilizadas actualmente)
+$trickyu = "";
+$nom_v = "";
+$tricky_v = "";
+$trickyp = "";
+
+echo "USer: " . $user . " - PWD: " . $pwd . "<BR>" ;
 
 $link=mysql_connect("mysql","nelosa_nelosa","mqm1804") ;
 mysql_select_db("nelosa_nelosa",$link) ;
@@ -75,18 +81,34 @@ else
 			
 			$usr=$user;
 			$vs_email=(string)$row["email"];
+      $_SESSION['vs_email'] = $vs_email;
 			$vs_nom=(string)$row["Nombre"];
+      $_SESSION['vs_nom'] = $vs_nom;
 			$vs_ape1=(string)$row["Apellido1"];
+      $_SESSION['vs_ape1'] = $vs_ape1;
 			$vs_ape2=(string)$row["Apellido2"];
+      $_SESSION['vs_ape2'] = $vs_ape2;
 			$vs_cp=(string)$row["Cp"];
+      $_SESSION['vs_cp'] = $vs_cp;
 			$vs_prov=(string)$row["Provincia"];
+      $_SESSION['vs_prov'] = $vs_prov;
 			$vs_pais=(string)$row["Pais"];
+      $_SESSION['vs_pais'] = $vs_pais;
 			$vs_pob=(string)$row["Poblacion"];
+      $_SESSION['vs_pob'] = $vs_pob;
 			$vs_tel=(string)$row["Telefono"];
+      $_SESSION['vs_tel'] = $vs_tel;
 			$vs_doc=(string)$row["Doc"];
+      $_SESSION['vs_doc'] = $vs_doc;  
 			$vs_empresa=(string)$row["Empresa"];
+      $_SESSION['vs_empresa'] = $vs_empresa;
 			$vs_adr=(string)$row["Direccion"];
+      $_SESSION['vs_adr'] = $vs_adr;
 			$vs_pais=(string)$row["Pais"];
+      $_SESSION['vs_pais'] = $vs_pais;
+
+      logVariable('Contenido row email: ', $row["email"], $level = "DEBUG", $file = "JUJÚ");
+      logVariable('Contenido vs_email: ', $vs_email, $level = "DEBUG", $file = "JUJÚ");
 			
 			$miki=$pwd;
 			

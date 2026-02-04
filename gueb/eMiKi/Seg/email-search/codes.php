@@ -1,4 +1,4 @@
-﻿<?
+<?
 /*If you wish to remove/get all the comments from a HTML string I think that this reg. ex. could come in handy :
 '<!--([^-]*([^-]|-([^-]|-[^>])))*-->'
 

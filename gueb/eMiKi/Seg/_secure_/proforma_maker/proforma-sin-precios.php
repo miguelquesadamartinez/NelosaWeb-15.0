@@ -1,4 +1,4 @@
-﻿<?php 	
+<?php 	
 session_register('itemsEnCesta'); 
 session_register('preciosEnCesta'); 
 // Para los calculos

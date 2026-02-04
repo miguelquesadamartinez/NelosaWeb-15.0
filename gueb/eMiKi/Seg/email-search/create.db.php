@@ -1,4 +1,4 @@
-﻿<HTML><HEAD><TITLE>email search by eMiKi</TITLE>
+<HTML><HEAD><TITLE>email search by eMiKi</TITLE>
 <META NAME="ROBOTS" content="NOFOLLOW,NOINDEX"/>
 <meta http-equiv='refresh' content=4;url=index.php>
 </HEAD><body bgcolor="#FFFFFF">

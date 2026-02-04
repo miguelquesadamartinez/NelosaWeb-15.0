@@ -1,4 +1,4 @@
-﻿<HTML>
+<HTML>
 <HEAD>
 <TITLE>NS Look Up</TITLE>
 <meta name="title" content=""/>

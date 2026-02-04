@@ -1,6 +1,9 @@
-﻿<?php 
+<?php 
 // Inicializar variables de sesión (compatible con PHP 5.4+)
 // Reemplazo de session_register() deprecated
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 
 if (!isset($_SESSION['usr'])) $_SESSION['usr'] = '';
 if (!isset($_SESSION['miki'])) $_SESSION['miki'] = '';

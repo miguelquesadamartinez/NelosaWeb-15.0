@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // Defines
 DEFINE ("DB_SELECT_FORM", 1);
 DEFINE ("POST_DB_SELECT_FORM", 2);

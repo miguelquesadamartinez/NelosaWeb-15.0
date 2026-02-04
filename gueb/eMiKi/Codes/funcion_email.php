@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 function quitar_marcas ( $estring )
 {
 	$chivi = 0 ; // Inicializamos el chivato a cero

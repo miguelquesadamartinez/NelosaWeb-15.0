@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 
 function writeLog($message, $level = "INFO", $file = "") {
     // Directorio de logs (crear si no existe)

@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 include ( "../../../eMiKi/Headers/vbles_sesion.php" );
 include ( "../../../eMiKi/Funciones_PHP.php" );
 ?>

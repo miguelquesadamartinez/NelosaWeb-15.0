@@ -1,4 +1,4 @@
-﻿<?php 	
+<?php 	
 session_register('doing'); 
 
 include("../../../eMiKi/Funciones_PHP.php"); 

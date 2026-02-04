@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 if ($handle = opendir(".")) {
     /* This is the correct way to loop over the directory. */
     while (false !== ($file = readdir($handle))) { 
